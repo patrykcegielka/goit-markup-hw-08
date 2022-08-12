@@ -1,0 +1,103 @@
+body {
+	font-family: "Raleway", "Roboto", sans-serif;
+	color: #ffff;
+	background-color: #e5e5e5;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	margin: auto;
+	padding: auto;
+}
+
+.link-no-underline {
+	text-decoration: none;
+}
+
+.filter-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 9px;
+	margin-top: 174px;
+	list-style: none;
+}
+
+.filter-button {
+	background-color: #f5f4fa;
+	border-width: 0;
+	height: 38px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 26px;
+	border-radius: 3px;
+	padding: 6px 22px;
+	font-family: "Roboto";
+}
+
+.filter-button:focus,
+.filter-button:hover {
+	cursor: pointer;
+}
+
+.blue-text {
+	color: #2196f3;
+}
+
+.white-text {
+	color: #ffff;
+}
+
+.product-card-header {
+	color: #212121;
+	letter-spacing: 0.06em;
+}
+
+.product-card-text {
+	color: #757575;
+	letter-spacing: 0.03em;
+}
+
+.address-text {
+	margin: 20px 0 0 0;
+	font-family: "Roboto";
+	font-style: normal;
+}
+
+.nav-style {
+	gap: 46px;
+	line-height: 1.2;
+	padding: 0;
+}
+
+.nav-list {
+	display: flex;
+	list-style: none;
+	line-height: 1.2;
+	margin: 0;
+}
+
+.header {
+	align-items: center;
+	gap: 93px;
+	flex-direction: row;
+	padding: 32px 0 32px 0;
+	display: flex;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.style-logo {
+	color: #000000;
+	font-size: 26px;
+	font-weight: 700;
+	letter-spacing: 0.03em;
+	line-height: 31px;
+}
+
+.footer {
+	display: block;
+	width: 100%;
+	background-color: #2f303a;
+	padding: 60px 0;
+}
