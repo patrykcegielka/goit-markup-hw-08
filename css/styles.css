@@ -184,10 +184,15 @@ body {
 
 .footer-links {
 	color: var(--footerlinks);
+	
 }
 
 .team-card-proffesion{
 	font-size: 16px;
 	letter-spacing: 0.03em;
 	color:var(--grey);
+}
+
+.footer-list{
+	list-style: none;
 }
