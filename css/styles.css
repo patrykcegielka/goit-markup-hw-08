@@ -1,7 +1,21 @@
+:root {
+	--black: #000000;
+	--white: #ffffff;
+	--blue: #2196f3;
+	--grey: #757575;
+	--lightwhite: #ececec;
+	--lightgrey: #e5e5e5;
+	--nblack: #212121;
+	--nwhite: #f5f4fa;
+	--darkgrey: #2f303a;
+	--bordercolor: #eeeeee;
+	--footerlinks: #ffffff99;
+}
+
 body {
 	font-family: "Raleway", "Roboto", sans-serif;
-	color: #ffff;
-	background-color: #e5e5e5;
+	color: var(--white);
+	background-color: var(--lightgrey);
 	font-size: 14px;
 	letter-spacing: 0.03em;
 	margin: auto;
@@ -21,7 +35,7 @@ body {
 }
 
 .filter-button {
-	background-color: #f5f4fa;
+	background-color: var(--nwhite);
 	border-width: 0;
 	height: 38px;
 	font-size: 16px;
@@ -31,27 +45,28 @@ body {
 	padding: 6px 22px;
 	font-family: "Roboto";
 }
-
-.filter-button:focus,
-.filter-button:hover {
-	cursor: pointer;
+.footer-links:hover,
+.footer-links:focus,
+.blue-text:hover,
+.blue-text:focus {
+	color: var(--blue);
 }
 
 .blue-text {
-	color: #2196f3;
+	color: var(--blue);
 }
 
 .white-text {
-	color: #ffff;
+	color: var(--white);
 }
 
 .product-card-header {
-	color: #212121;
+	color: var(--nblack);
 	letter-spacing: 0.06em;
 }
 
 .product-card-text {
-	color: #757575;
+	color: var(--grey);
 	letter-spacing: 0.03em;
 }
 
@@ -88,7 +103,7 @@ body {
 }
 
 .style-logo {
-	color: #000000;
+	color: var(--black);
 	font-size: 26px;
 	font-weight: 700;
 	letter-spacing: 0.03em;
@@ -96,8 +111,83 @@ body {
 }
 
 .footer {
-	display: block;
 	width: 100%;
-	background-color: #2f303a;
+	background-color: var(--darkgrey);
 	padding: 60px 0;
+}
+
+.link-style {
+	font-weight: 500;
+	color: var(--nblack);
+}
+
+.contakt-link-style {
+	color: var(--grey);
+}
+
+.top-text-style {
+	font-family: "Roboto";
+	color: var(--white);
+	font-weight: 900;
+	font-size: 44px;
+	letter-spacing: 0.06em;
+	line-height: 1.364;
+}
+
+.lorem-header {
+	width: 270px;
+	height: 16px;
+	color: var(--nblack);
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+}
+
+.lorem-text {
+	width: 270px;
+	height: 75px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	color: var(--grey);
+}
+
+.button-order-service {
+	background-color: var(--blue);
+	border-radius: 4px;
+	border-style: none;
+	width: 200px;
+	height: 50px;
+	color: var(--white);
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: "Roboto";
+}
+
+.section-header {
+	font-weight: 700;
+	font-size: 36px;
+	color: var(--nblack);
+}
+
+.team-card-name {
+	color: var(--nblack);
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.1875;
+}
+
+.footer-links {
+	color: var(--footerlinks);
+}
+
+.team-card-proffesion{
+	font-size: 16px;
+	letter-spacing: 0.03em;
+	color:var(--grey);
 }
