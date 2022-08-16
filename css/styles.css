@@ -201,3 +201,7 @@ body {
 .footer-list {
 	list-style: none;
 }
+
+.name-highlighted {
+	color: var(--blue);
+}
