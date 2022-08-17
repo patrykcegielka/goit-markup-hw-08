@@ -59,11 +59,12 @@ body {
 .link-no-underline {
 	text-decoration: none;
 }
-.contact-link-style {
-	color: var(--grey);
-}
+
 .blue-text {
 	color: var(--blue);
+}
+.contact-link-style {   
+color: var(--grey);
 }
 
 .white-text {
