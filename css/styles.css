@@ -56,19 +56,21 @@ body {
 	color: var(--blue);
 }
 
-.link-no-underline {
-	text-decoration: none;
-}
-
 .blue-text {
 	color: var(--blue);
 }
-.contact-link-style {   
+.link-style-decoration {   
 color: var(--grey);
+text-decoration: none;
 }
 
-.white-text {
+.logo-white-text {
 	color: var(--white);
+	text-decoration: none;
+	font-size: 26px;
+	font-weight: 700;
+	letter-spacing: 0.03em;
+	line-height: 31px;
 }
 
 .product-card-header {
@@ -130,6 +132,7 @@ color: var(--grey);
 .link-style {
 	font-weight: 500;
 	color: var(--nblack);
+	text-decoration: none;
 }
 
 .top-text-style {
@@ -141,7 +144,7 @@ color: var(--grey);
 	line-height: 1.364;
 }
 
-.our-speciality-header {
+.speciality-header {
 	width: 270px;
 	height: 16px;
 	color: var(--nblack);
@@ -152,7 +155,7 @@ color: var(--grey);
 	letter-spacing: 0.03em;
 }
 
-.our-speciality-text {
+.speciality-text {
 	width: 270px;
 	height: 75px;
 	font-weight: 400;
