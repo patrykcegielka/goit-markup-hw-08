@@ -22,10 +22,6 @@ body {
 	padding: auto;
 }
 
-.link-no-underline {
-	text-decoration: none;
-}
-
 .filter-buttons {
 	display: flex;
 	justify-content: center;
@@ -60,6 +56,12 @@ body {
 	color: var(--blue);
 }
 
+.link-no-underline {
+	text-decoration: none;
+}
+.contact-link-style {
+	color: var(--grey);
+}
 .blue-text {
 	color: var(--blue);
 }
@@ -127,10 +129,6 @@ body {
 .link-style {
 	font-weight: 500;
 	color: var(--nblack);
-}
-
-.contakt-link-style {
-	color: var(--grey);
 }
 
 .top-text-style {
