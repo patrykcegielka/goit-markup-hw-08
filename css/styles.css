@@ -48,7 +48,6 @@ body {
 	padding: 6px 22px;
 	font-family: "Roboto";
 }
-
 .footer-links:hover,
 .footer-links:focus,
 .blue-text:hover,
@@ -59,10 +58,32 @@ body {
 .blue-text {
 	color: var(--blue);
 }
-.link-style-decoration {   
+.contact-style {   
 color: var(--grey);
 text-decoration: none;
 }
+.contact-style:hover{
+	color:var(--blue);
+}
+
+
+.link{
+	font-weight: 500;
+	color: var(--nblack);
+	text-decoration: none;
+}
+
+.link:hover{
+	color:var(--blue);
+}
+.link:active {
+	color:var(--blue);
+}
+
+.link-active {
+	color: var(--blue);
+}
+
 
 .logo-white-text {
 	color: var(--white);
@@ -121,18 +142,14 @@ text-decoration: none;
 	font-weight: 700;
 	letter-spacing: 0.03em;
 	line-height: 31px;
+	text-decoration: none;
+	
 }
 
 .footer {
 	width: 100%;
 	background-color: var(--darkgrey);
 	padding: 60px 0;
-}
-
-.link-style {
-	font-weight: 500;
-	color: var(--nblack);
-	text-decoration: none;
 }
 
 .top-text-style {
@@ -202,8 +219,4 @@ text-decoration: none;
 
 .footer-list {
 	list-style: none;
-}
-
-.name-highlighted {
-	color: var(--blue);
 }
