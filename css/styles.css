@@ -15,12 +15,15 @@
 body {
 	font-family: "Raleway", "Roboto", sans-serif;
 	color: var(--white);
-	background-color: var(--white);
+	background-color: var(--lightgrey);
 	font-size: 14px;
 	letter-spacing: 0.03em;
-	margin: auto;
-	padding: auto;
+	margin: 0;
+	padding: 0;
+	
 }
+
+
 
 .filter-buttons {
 	display: flex;
@@ -175,16 +178,18 @@ text-decoration: none;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.1875;
+	margin: 30px 0 10px 0;
 }
-
-.footer-links {
-	color: var(--footerlinks);
-}
-
 .card-proffesion {
 	font-size: 16px;
 	letter-spacing: 0.03em;
 	color: var(--grey);
+	margin: 0 0 30px 0;
+}
+
+.footer-links {
+	color: var(--footerlinks);
+	padding: 0;
 }
 
 .footer-list {
@@ -193,11 +198,7 @@ text-decoration: none;
 
 
 /* Stylizacja model blokowy zadanie numer 3*/
-section{
-	display: block;
-}
-div{
-	display: block;}
+
 
 .container {
 		width: 1200px;
@@ -206,7 +207,7 @@ div{
 
 .wrapper {
     background-color:var(--white);
-    width: 100%;
+    width: auto;
     margin: 0 auto;
 }
 
