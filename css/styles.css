@@ -145,7 +145,7 @@ body {
 /* Stylizacja model blokowy zadanie numer 3*/
 .wrapper {
 	background-color: var(--white);
-	width: 1600px;
+	width: 100%;
 	margin: 0 auto;
 }
 .container {
