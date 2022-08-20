@@ -11,7 +11,6 @@
 	--bordercolor: #eeeeee;
 	--footerlinks: #ffffff99;
 }
-
 body {
 	font-family: "Raleway", "Roboto", sans-serif;
 	color: var(--white);
@@ -21,32 +20,11 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
-.filter-buttons {
-	display: flex;
-	justify-content: center;
-	gap: 9px;
-	margin-top: 174px;
-	list-style: none;
-}
-
 .filter-button:hover {
 	background-color: var(--blue);
 	color: var(--white);
 	box-shadow: 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
 		0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.filter-button {
-	background-color: var(--nwhite);
-	border-width: 0;
-	height: 38px;
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 26px;
-	border-radius: 3px;
-	padding: 6px 22px;
-	font-family: "Roboto";
 }
 .footer-links:hover,
 .footer-links:focus,
@@ -54,7 +32,6 @@ body {
 .blue-text:focus {
 	color: var(--blue);
 }
-
 .blue-text {
 	color: var(--blue);
 }
@@ -65,24 +42,20 @@ body {
 .contact-style:hover {
 	color: var(--blue);
 }
-
 .link {
 	font-weight: 500;
 	color: var(--nblack);
 	text-decoration: none;
 }
-
 .link:hover {
 	color: var(--blue);
 }
 .link:active {
 	color: var(--blue);
 }
-
 .link-active {
 	color: var(--blue);
 }
-
 .logo-white-text {
 	color: var(--white);
 	text-decoration: none;
@@ -91,23 +64,11 @@ body {
 	letter-spacing: 0.03em;
 	line-height: 31px;
 }
-
-.product-card-header {
-	color: var(--nblack);
-	letter-spacing: 0.06em;
-}
-
-.product-card-text {
-	color: var(--grey);
-	letter-spacing: 0.03em;
-}
-
 .address-text {
 	margin: 20px 0 0 0;
 	font-family: "Roboto";
 	font-style: normal;
 }
-
 .style-logo {
 	font-family: "Raleway";
 	color: var(--black);
@@ -117,13 +78,11 @@ body {
 	line-height: 31px;
 	text-decoration: none;
 }
-
 .footer {
 	width: 100%;
 	background-color: var(--darkgrey);
 	padding: 60px 0;
 }
-
 .top-text-style {
 	font-family: "Roboto";
 	color: var(--white);
@@ -132,8 +91,8 @@ body {
 	letter-spacing: 0.06em;
 	line-height: 1.364;
 	text-align: center;
+	margin: 0;
 }
-
 .speciality-header {
 	width: 270px;
 	height: 16px;
@@ -144,16 +103,14 @@ body {
 	line-height: 16px;
 	letter-spacing: 0.03em;
 }
-
 .speciality-text {
 	width: 270px;
 	height: 75px;
 	font-weight: 400;
-	line-height: 16px;
+	line-height: 24px;
 	letter-spacing: 0.03em;
 	color: var(--grey);
 }
-
 .button-order-service {
 	background-color: var(--blue);
 	border-radius: 4px;
@@ -166,7 +123,6 @@ body {
 	font-weight: 700;
 	font-family: "Roboto";
 }
-
 .card-name {
 	color: var(--nblack);
 	font-size: 16px;
@@ -180,29 +136,22 @@ body {
 	color: var(--grey);
 	margin: 0 0 30px 0;
 }
-
 .footer-links {
 	color: var(--footerlinks);
 	padding: 0;
+	display: block;
+	margin: 9px 0 9px 0;
 }
-
-.footer-list {
-	list-style: none;
-}
-
 /* Stylizacja model blokowy zadanie numer 3*/
-
 .wrapper {
 	background-color: var(--white);
 	width: 1600px;
 	margin: 0 auto;
 }
-
 .container {
 	width: 1200px;
 	margin: 0 auto;
 }
-
 .header {
 	align-items: center;
 	gap: 93px;
@@ -210,26 +159,22 @@ body {
 	padding: 25px 0 26px 0;
 	display: flex;
 }
-
 .nav-style {
 	gap: 46px;
 	line-height: 1.2;
 	padding: 0;
 }
-
 .nav-list {
 	display: flex;
 	list-style: none;
 	line-height: 1.2;
 	margin: 0;
 }
-
 .contacts-style {
 	gap: 50px;
 	padding: 0 0 0 278px;
 	margin: 0;
 }
-
 .top-section {
 	background-color: var(--darkgrey);
 	color: var(--white);
@@ -241,7 +186,6 @@ body {
 	align-items: center;
 	padding: 200px 0;
 }
-
 .speciality-container {
 	padding: 94px 0 0 0;
 	display: flex;
@@ -249,13 +193,13 @@ body {
 	flex-direction: row;
 	gap: 30px;
 	justify-content: center;
+	margin: 0;
 }
 .services-container {
 	align-items: center;
 	flex-direction: column;
 	padding: 94px 0;
 }
-
 .section-header {
 	font-weight: 700;
 	font-size: 36px;
@@ -263,26 +207,23 @@ body {
 	text-align: center;
 	margin: 0px 0 50px 0;
 }
-
 .services-list {
 	display: flex;
 	flex-direction: row;
 	gap: 30px;
 	list-style: none;
 	margin: 0;
+	padding:0;
 	justify-content: center;
 }
-
 .team-background {
 	background-color: var(--nwhite);
 	padding: 94px 0;
 }
-
 .team-tiles {
 	align-items: center;
 	flex-direction: column;
 }
-
 .team-list {
 	display: flex;
 	flex-direction: row;
@@ -292,7 +233,6 @@ body {
 	padding: 0;
 	margin: 0;
 }
-
 .team-card {
 	background-color: var(--white);
 	box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
@@ -301,17 +241,66 @@ body {
 	text-align: center;
 	margin: 0;
 }
-
+.address-style {
+	display: flex;
+	gap: 50px;
+	margin-left: auto;
+}
+.line-header {
+	border-bottom: var(--lightwhite) solid 1px;
+}
+.filter-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	margin: 94px 0 0 0;
+	list-style: none;
+}
+.filter-button {
+	background-color: var(--nwhite);
+	border-width: 0;
+	height: 38px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 26px;
+	border-radius: 3px;
+	padding: 6px 22px;
+	font-family: "Roboto";
+}
+.product-container{
+	display:flex;
+	flex-wrap: wrap;
+	gap:30px;
+	margin-top: 50px;
+	margin-bottom: 94px;
+	list-style: none;
+    justify-content: center;
+	padding:0;
+}
+.product-card {
+    border: var(--bordercolor) solid 1px;
+    flex-basis: calc((100% - 90px) / 3);
+    height: 404px;
+    margin: 0;
+}
+.product-card-header {
+	color: var(--nblack);
+	letter-spacing: 0.06em;
+	height: 700;
+	margin: 20px 0px 4px 24px;
+	font-size: 18px;
+	line-height: 1.71;
+}
+.product-card-text {
+	color: var(--grey);
+	letter-spacing: 0.03em;
+	height: 400;
+	margin: 0px 0px 0px 24px;
+	font-size: 16px;
+	line-height: 1.60;
+}
 .footer-container {
 	flex-direction: column;
 	color: var(--white);
 	margin-left: 215px;
-}
-
-.no-padding {
-	padding: 0;
-}
-
-.no-margin {
-	margin: 0;
 }
