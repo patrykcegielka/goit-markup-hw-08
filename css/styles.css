@@ -186,20 +186,20 @@ body {
 	align-items: center;
 	padding: 200px 0;
 }
-.speciality-container {
+
+.section {
 	padding: 94px 0 0 0;
 	display: flex;
-	list-style: none;
-	flex-direction: row;
-	gap: 30px;
-	justify-content: center;
-	margin: 0;
-}
-.services-container {
-	align-items: center;
 	flex-direction: column;
-	padding: 94px 0;
+
 }
+
+.article-shorts {
+	display: flex;
+	gap: 30px;
+    justify-content: center;
+}
+
 .section-header {
 	font-weight: 700;
 	font-size: 36px;
