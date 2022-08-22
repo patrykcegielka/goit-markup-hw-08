@@ -186,20 +186,16 @@ body {
 	align-items: center;
 	padding: 200px 0;
 }
-
 .section {
 	padding: 94px 0 0 0;
 	display: flex;
 	flex-direction: column;
-
 }
-
 .article-shorts {
 	display: flex;
 	gap: 30px;
     justify-content: center;
 }
-
 .section-header {
 	font-weight: 700;
 	font-size: 36px;
