@@ -186,6 +186,9 @@ body {
 	align-items: center;
 	padding: 200px 0;
 }
+.section:last-of-type {
+	padding: 94px 0;
+}
 .section {
 	padding: 94px 0 0 0;
 	display: flex;
@@ -194,7 +197,7 @@ body {
 .article-shorts {
 	display: flex;
 	gap: 30px;
-    justify-content: center;
+	justify-content: center;
 }
 .section-header {
 	font-weight: 700;
