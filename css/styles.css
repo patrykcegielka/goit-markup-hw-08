@@ -35,9 +35,12 @@ body {
 .blue-text {
 	color: var(--blue);
 }
-.contact-style {
+.contact-style{
 	color: var(--grey);
 	text-decoration: none;
+	font-family: "Roboto";
+	font-weight: 500;
+
 }
 .contact-style:hover {
 	color: var(--blue);
@@ -176,6 +179,7 @@ body {
 	margin: 0;
 }
 .top-section {
+	background-image: url();
 	background-color: var(--darkgrey);
 	color: var(--white);
 	width: 100%;
@@ -186,7 +190,7 @@ body {
 	align-items: center;
 	padding: 200px 0;
 }
-.section:nth-of-type(3) {    
+.section:nth-of-type(3) {
 	padding: 94px 0;
 }
 .section {
@@ -303,4 +307,19 @@ body {
 	flex-direction: column;
 	color: var(--white);
 	margin-left: 215px;
+}
+
+/*SVG- images style*/
+
+.icons-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	fill: var(--grey);
+}
+.icon-spacing {
+	margin-right: 10px;
+}
+.icons-header:hover{
+	fill:var(--blue);
 }
