@@ -10,6 +10,8 @@
 	--darkgrey: #2f303a;
 	--bordercolor: #eeeeee;
 	--footerlinks: #ffffff99;
+	--background: #2f303a66;
+	--iconcolor: #afb1b8;
 }
 body {
 	font-family: "Raleway", "Roboto", sans-serif;
@@ -35,12 +37,11 @@ body {
 .blue-text {
 	color: var(--blue);
 }
-.contact-style{
+.contact-style {
 	color: var(--grey);
 	text-decoration: none;
 	font-family: "Roboto";
 	font-weight: 500;
-
 }
 .contact-style:hover {
 	color: var(--blue);
@@ -179,8 +180,9 @@ body {
 	margin: 0;
 }
 .top-section {
-	background-image: url();
-	background-color: var(--darkgrey);
+	background-image: url("https://raw.githubusercontent.com/patrykcegielka/goit-markup-hw-04/main/images/background.jpg");
+	background-color: var(--background);
+	background-blend-mode: difference;
 	color: var(--white);
 	width: 100%;
 	display: flex;
@@ -309,6 +311,7 @@ body {
 	margin-left: 215px;
 }
 
+
 /*SVG- images style*/
 
 .icons-header {
@@ -320,6 +323,30 @@ body {
 .icon-spacing {
 	margin-right: 10px;
 }
-.icons-header:hover{
-	fill:var(--blue);
+.icons-header:hover {
+	fill: var(--blue);
 }
+
+.speciality-icons {
+	background-color: var(--nwhite);
+	width: 270px;
+	height: 120px;
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.team-card-icons {
+	display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+	justify-content: center;
+}
+
+.card-icons{
+	height: 44px;
+	width: 44px;
+	background-color: var(--white);
+	fill: var(--iconcolor);
+	border-radius: 50%;}
