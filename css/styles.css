@@ -12,6 +12,7 @@
 	--footerlinks: #ffffff99;
 	--background: #2f303a66;
 	--iconcolor: #afb1b8;
+	--footericon: rgba(255, 255, 255, 0.1);
 }
 body {
 	font-family: "Raleway", "Roboto", sans-serif;
@@ -25,8 +26,7 @@ body {
 .filter-button:hover {
 	background-color: var(--blue);
 	color: var(--white);
-	box-shadow: 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-		0px 2px 2px rgba(0, 0, 0, 0.12);
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .footer-links:hover,
 .footer-links:focus,
@@ -289,6 +289,11 @@ body {
 	height: 404px;
 	margin: 0;
 }
+.product-card:hover {
+	cursor: pointer;
+	border: 1px solid rgba(238, 238, 238, 1);
+	box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+}
 .product-card-header {
 	color: var(--nblack);
 	letter-spacing: 0.06em;
@@ -306,11 +311,12 @@ body {
 	line-height: 1.6;
 }
 .footer-container {
+	display: flex;
 	flex-direction: column;
+	flex-direction: row;
 	color: var(--white);
 	margin-left: 215px;
 }
-
 
 /*SVG- images style*/
 
@@ -339,14 +345,79 @@ body {
 
 .team-card-icons {
 	display: flex;
-    gap: 10px;
-    margin-bottom: 30px;
+	gap: 10px;
+	margin-bottom: 30px;
 	justify-content: center;
 }
 
-.card-icons{
+.card-icons {
 	height: 44px;
 	width: 44px;
 	background-color: var(--white);
 	fill: var(--iconcolor);
-	border-radius: 50%;}
+	border-radius: 50%;
+}
+.card-icons:hover{
+	cursor: pointer;
+	fill:var(--white);
+	background-color:var(--blue);
+	border-color:var(--blue);
+}
+.section-clients {
+	padding: 94px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: var(--white);
+}
+
+.client-logos {
+	display: flex;
+	gap: 30px;
+	list-style: none;
+}
+
+.client-logo {
+	height: 92px;
+	width: 170px;
+	border-radius: 4px;
+	color: var(--iconcolor);
+	border: 1px solid rgba(175, 177, 184, 1);
+	fill: var(--iconcolor);
+}
+.client-logo:hover {
+	border-color: var(--blue);
+	fill: var(--blue);
+}
+
+.footer-header {
+	font-weight: 700;
+	color: var(--white);
+	text-transform: uppercase;
+	margin-left: 70px;
+	margin-bottom: 20px;
+}
+
+.footer-contacts {
+	width: 246px;
+}
+
+.footer-icons {
+	display: flex;
+	list-style: none;
+	margin-left: 70px;
+	gap: 10px;
+	padding: 0;
+}
+
+.footer-icon {
+	height: 44px;
+	width: 44px;
+	border-radius: 50%;
+	background-color: var(--footericon);
+	fill: var(--white);
+}
+.footer-icon:hover {
+	background-color: var(--blue);
+}
