@@ -431,18 +431,12 @@ body {
 }
 /* Button hidden - zadanie 5*/
 .backdrop {
+	position: fixed;
 	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
 	background-color: var(--backgroundbackdrop);
-	position: fixed;
-	transition: all 250ms ease-in;
-}
-.is-hiden {
-	opacity: 0;
-	visibility: hidden;
-	pointer-events: none;
 	transition: all 250ms ease-in;
 }
 .modal {
@@ -452,16 +446,23 @@ body {
 	transform: translate(-50%, -50%);
 	width: 528px;
 	height: 581px;
-	background-color: #ffffff;
+	background-color: var(--white);
 }
 .close-btn {
 	position: absolute;
 	top: 8px;
 	right: 8px;
-	background-color: #ffffff;
+	background-color: var(--white);
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 	cursor: pointer;
 	width: 30px;
 	height: 30px;
+}
+
+.is-hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: all 250ms ease-in;
 }
