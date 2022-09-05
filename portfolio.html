@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/modern-normalize.css" rel="stylesheet" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,7 +15,6 @@
         rel="stylesheet">
 
     <title>Studio</title>
-
 </head>
 
 <body>
@@ -23,13 +24,19 @@
             <nav>
                 <ul class="nav-style nav-list">
                     <li><a href="" class="link">Agencja</a></li>
-                    <li><a href="portfolio.html" class="link-active">Portfolio</a></li>
+                    <li><a href="portfolio.html" class="link-active page-actives">Portfolio</a></li>
                     <li><a href="" class="link">Kontakt</a></li>
                 </ul>
             </nav>
             <div class="address-style">
-                <a href="mailto:info@devstudio.com" class="contact-style">info@devstudio.com</a>
-                <a href="tel:+48111111111" class="contact-style">+48 111 111 111</a>
+                <a href="mailto:info@devstudio.com" class="contact-style icons-header">
+                    <svg class="icon-spacing" width="16" height="12">
+                        <use xlink:href="./images/icons.svg#email-logo"></use>
+                    </svg>info@devstudio.com</a>
+                <a href="tel:+48111111111" class="contact-style icons-header"><svg class="icon-spacing" width="10"
+                        height="16">
+                        <use xlink:href="./images/icons.svg#smartphone-logo"></use>
+                    </svg>+48 111 111 111</a>
             </div>
         </header>
         <div class="line-header"></div>
@@ -54,49 +61,159 @@
             <div class="container">
                 <ul class="product-container">
                     <li class="product-card">
+                        <div class="product-info">
+                            <div class="product-anime">
+                                <p>
+                                    Technocrack jest popularną<br>
+                                    platformą wykorzystywaną do<br>
+                                    rozpowszechniania koronawirusa.<br>
+                                    Firmy wykorzystują tę platformę do<br>
+                                    celów szpiegowskich i ataków na<br>
+                                    niezabezpieczone serwery <br>konkurencji.
+                                </p>
+                            </div>
+                        </div>
                         <img src="images/technocrack.jpg" width="370" height="294" alt="Technocrack laptop">
                         <h4 class="product-card-header">Technocrack</h4>
                         <p class="product-card-text">Strona internetowa</p>
                     </li>
                     <li class="product-card">
+                        <div class="product-info">
+                            <div class="product-anime">
+                                <p>
+                                    Technocrack jest popularną<br>
+                                    platformą wykorzystywaną do<br>
+                                    rozpowszechniania koronawirusa.<br>
+                                    Firmy wykorzystują tę platformę do<br>
+                                    celów szpiegowskich i ataków na<br>
+                                    niezabezpieczone serwery <br>konkurencji.
+                                </p>
+                            </div>
+                        </div>
                         <img src="images/graphic-new-orlean-vs-golden-star.jpg" width="370" height="294"
                             alt="Grafika New Orlean vs Golden Star">
                         <h4 class="product-card-header">Grafika New Orlean vs Golden Star</h4>
                         <p class="product-card-text">Dizajn</p>
                     </li>
                     <li class="product-card">
+                        <div class="product-info">
+                            <div class="product-anime">
+                                <p>
+                                    Technocrack jest popularną<br>
+                                    platformą wykorzystywaną do<br>
+                                    rozpowszechniania koronawirusa.<br>
+                                    Firmy wykorzystują tę platformę do<br>
+                                    celów szpiegowskich i ataków na<br>
+                                    niezabezpieczone serwery <br>konkurencji.
+                                </p>
+                            </div>
+                        </div>
                         <img src="images/restaurant-seafood.jpg" width="370" height="294"
                             alt="Restauracja Seafood na tle ryby">
                         <h4 class="product-card-header">Restauracja Seafood</h4>
                         <p class="product-card-text">Aplikacja</p>
                     </li>
                     <li class="product-card">
-                        <img src="images/project-prime.jpg" width="370" height="294" alt="">
+                        <div class="product-info">
+                            <div class="product-anime">
+                                <p>
+                                    Technocrack jest popularną<br>
+                                    platformą wykorzystywaną do<br>
+                                    rozpowszechniania koronawirusa.<br>
+                                    Firmy wykorzystują tę platformę do<br>
+                                    celów szpiegowskich i ataków na<br>
+                                    niezabezpieczone serwery <br>konkurencji.
+                                </p>
+                            </div>
+                        </div>
+                        <img src="images/project-prime.jpg" width="370" height="294" alt="project-prime">
                         <h4 class="product-card-header">Projekt Prime</h4>
                         <p class="product-card-text">Marketing</p>
                     </li>
                     <li class="product-card">
-                        <img src="images/project-boxes.jpg" width="370" height="294" alt="">
+                        <div class="product-info">
+                            <div class="product-anime">
+                                <p>
+                                    Technocrack jest popularną<br>
+                                    platformą wykorzystywaną do<br>
+                                    rozpowszechniania koronawirusa.<br>
+                                    Firmy wykorzystują tę platformę do<br>
+                                    celów szpiegowskich i ataków na<br>
+                                    niezabezpieczone serwery <br>konkurencji.
+                                </p>
+                            </div>
+                        </div>
+                        <img src="images/project-boxes.jpg" width="370" height="294" alt="project-boxes">
                         <h4 class="product-card-header">Projekt Boxes</h4>
                         <p class="product-card-text">Aplikacja</p>
                     </li>
                     <li class="product-card">
-                        <img src="images/inspiration-has-no-borders.jpg" width="370" height="294" alt="">
+                        <div class="product-info">
+                            <div class="product-anime">
+                                <p>
+                                    Technocrack jest popularną<br>
+                                    platformą wykorzystywaną do<br>
+                                    rozpowszechniania koronawirusa.<br>
+                                    Firmy wykorzystują tę platformę do<br>
+                                    celów szpiegowskich i ataków na<br>
+                                    niezabezpieczone serwery <br>konkurencji.
+                                </p>
+                            </div>
+                        </div>
+                        <img src="images/inspiration-has-no-borders.jpg" width="370" height="294"
+                            alt="inspiration-has-no-borders">
                         <h4 class="product-card-header">Inspiration has no Borders</h4>
                         <p class="product-card-text">Strona internetowa</p>
                     </li>
                     <li class="product-card">
-                        <img src="images/magazyn-limited-edition.jpg" width="370" height="294" alt="">
+                        <div class="product-info">
+                            <div class="product-anime">
+                                <p>
+                                    Technocrack jest popularną<br>
+                                    platformą wykorzystywaną do<br>
+                                    rozpowszechniania koronawirusa.<br>
+                                    Firmy wykorzystują tę platformę do<br>
+                                    celów szpiegowskich i ataków na<br>
+                                    niezabezpieczone serwery <br>konkurencji.
+                                </p>
+                            </div>
+                        </div>
+                        <img src="images/magazyn-limited-edition.jpg" width="370" height="294"
+                            alt="magazyn-limited-edition">
                         <h4 class="product-card-header">Magazyn Limited Edition</h4>
                         <p class="product-card-text">Dizajn</p>
                     </li>
                     <li class="product-card">
-                        <img src="images/projekt-lab.jpg" width="370" height="294" alt="">
+                        <div class="product-info">
+                            <div class="product-anime">
+                                <p>
+                                    Technocrack jest popularną<br>
+                                    platformą wykorzystywaną do<br>
+                                    rozpowszechniania koronawirusa.<br>
+                                    Firmy wykorzystują tę platformę do<br>
+                                    celów szpiegowskich i ataków na<br>
+                                    niezabezpieczone serwery <br>konkurencji.
+                                </p>
+                            </div>
+                        </div>
+                        <img src="images/projekt-lab.jpg" width="370" height="294" alt="projekt-lab">
                         <h4 class="product-card-header">Projekt LAB</h4>
                         <p class="product-card-text">Marketing</p>
                     </li>
                     <li class="product-card">
-                        <img src="images/growing-business.jpg" width="370" height="294" alt="">
+                        <div class="product-info">
+                            <div class="product-anime">
+                                <p>
+                                    Technocrack jest popularną<br>
+                                    platformą wykorzystywaną do<br>
+                                    rozpowszechniania koronawirusa.<br>
+                                    Firmy wykorzystują tę platformę do<br>
+                                    celów szpiegowskich i ataków na<br>
+                                    niezabezpieczone serwery <br>konkurencji.
+                                </p>
+                            </div>
+                        </div>
+                        <img src="images/growing-business.jpg" width="370" height="294" alt="growing-business">
                         <h4 class="product-card-header">Growing Business</h4>
                         <p class="product-card-text">Aplikacja</p>
                     </li>
