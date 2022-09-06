@@ -491,6 +491,7 @@ figure {
 .product-info {
 	position: absolute;
 	max-width: 370px;
+	max-height: 294px;
 	overflow: hidden;
 }
 
