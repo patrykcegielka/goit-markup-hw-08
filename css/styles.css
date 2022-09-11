@@ -328,9 +328,7 @@ body {
 	color: var(--white);
 	margin-left: 215px;
 }
-
 /*SVG- images style*/
-
 .icons-header {
 	display: flex;
 	justify-content: center;
@@ -344,7 +342,6 @@ body {
 .icons-header:hover {
 	fill: var(--blue);
 }
-
 .speciality-icons {
 	background-color: var(--nwhite);
 	width: 270px;
@@ -354,14 +351,12 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-
 .team-card-icons {
 	display: flex;
 	gap: 10px;
 	margin-bottom: 30px;
 	justify-content: center;
 }
-
 .card-icons {
 	height: 44px;
 	width: 44px;
@@ -383,13 +378,11 @@ body {
 	flex-direction: column;
 	background-color: var(--white);
 }
-
 .client-logos {
 	display: flex;
 	gap: 30px;
 	list-style: none;
 }
-
 .client-logo {
 	height: 92px;
 	width: 170px;
@@ -402,7 +395,6 @@ body {
 	border-color: var(--blue);
 	fill: var(--blue);
 }
-
 .footer-header {
 	font-weight: 700;
 	color: var(--white);
@@ -410,11 +402,9 @@ body {
 	margin-left: 70px;
 	margin-bottom: 20px;
 }
-
 .footer-contacts {
 	width: 246px;
 }
-
 .footer-icons {
 	display: flex;
 	list-style: none;
@@ -422,7 +412,6 @@ body {
 	gap: 10px;
 	padding: 0;
 }
-
 .footer-icon {
 	height: 44px;
 	width: 44px;
@@ -452,10 +441,10 @@ body {
 	height: 581px;
 	background-color: var(--white);
 	display: flex;
+	font-size: 12px;
 	align-items: center;
 	flex-direction: column;
 }
-
 .close-btn {
 	position: absolute;
 	top: 8px;
@@ -467,14 +456,12 @@ body {
 	width: 30px;
 	height: 30px;
 }
-
 .is-hidden {
 	opacity: 0;
 	visibility: hidden;
 	pointer-events: none;
 	transition: all 250ms ease-in;
 }
-
 .picture-description {
 	color: var(--white);
 	font-weight: 700;
@@ -497,7 +484,6 @@ figure {
 	line-height: 2.3px;
 	color: var(--nblack);
 }
-
 .form-input {
 	display: block;
 	padding: 0 0 0 30px;
@@ -505,7 +491,7 @@ figure {
 	height: 40px;
 	width: 448px;
 	border-radius: 4px;
-	border:1px solid rgba(33, 33, 33, 0.2);
+	border: 1px solid rgba(33, 33, 33, 0.2);
 	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-form {
@@ -516,13 +502,11 @@ figure {
 	letter-spacing: 0.01em;
 	color: var(--grey);
 }
-
 .form-icons {
 	position: absolute;
 	height: 20px;
 	width: 20px;
 }
-
 .icon-position1 {
 	top: 140px;
 	left: 52px;
@@ -535,10 +519,7 @@ figure {
 	top: 283px;
 	left: 51px;
 }
-
-
-/*Sekcja "Komentarz"*/
-
+/*Sekcja "Komentarz" zadanie domowe nr 6*/
 .form-comment {
 	height: 120px;
 	width: 448px;
@@ -547,38 +528,70 @@ figure {
 	resize: none;
 	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/*Sekcja regulamin dla formularza zadanie domowe 6*/
+.tick{
+	position: absolute;
+	width:11px;
+	height: 8px;
+	left: 48px;
+    top: 482px;
+    z-index: 999;
+	fill:var(--white);
+}
+.terms-and-conditions {
+	font-size: 14px;
+	padding: 15px 0 20px 0;
+}
+.terms-and-conditions input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+.terms-and-conditions input:checked ~ .checkmark {
+	background-color: var(--blue);
+	border: none;
+  }
+.checkmark {
+	position: absolute;
+	cursor: pointer;
+	height: 15px;
+	width: 16px;
+	top: 478px;
+    left: 45px;
+    border-radius: 2px;
+    background-color: var(--white);
+    border: var(--nblack) 2px solid;
+}
 
-/*Sekcja pseudoklas dla formularza*/
+/*Sekcja pseudoklas dla formularza zadanie domowe 6*/
 .form-comment::placeholder {
 	color: rgba(117, 117, 117, 0.658);
 }
 .form-comment:hover,
 .form-comment:focus,
 .form-comment:active {
-  border: var(--blue) 1px solid;
-  box-shadow: none;
-  outline: none;
+	border: var(--blue) 1px solid;
+	box-shadow: none;
+	outline: none;
 }
 .form-hover:hover > .form-input,
 .form-hover:focus > .form-input {
-  border: var(--blue) 1px solid;
-  box-shadow: none;
-  outline: none;
+	border: var(--blue) 1px solid;
+	box-shadow: none;
+	outline: none;
 }
 .form-hover:hover > .form-icons,
 .form-hover:focus > .form-icons {
-  fill: var(--blue);
+	fill: var(--blue);
 }
-
 /* Portfolio anime product - zadanie domowe numer 5*/
-
 .product-info {
 	position: absolute;
 	max-width: 370px;
 	max-height: 294px;
 	overflow: hidden;
 }
-
 .product-anime {
 	transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 	transform: translateY(100%);
@@ -596,7 +609,6 @@ figure {
 .product-info:hover .product-anime {
 	transform: translateY(0);
 }
-
 .page-actives::after {
 	content: "";
 	display: block;
