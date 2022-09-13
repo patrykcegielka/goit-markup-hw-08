@@ -596,7 +596,7 @@ figure {
 	width: 11px;
 	height: 8px;
 	left: 47px;
-	top: 463px;
+	top: 462px;
 	z-index: 999;
 	fill: var(--white);
 }
@@ -619,7 +619,7 @@ figure {
 	cursor: pointer;
 	height: 15px;
 	width: 16px;
-	top: 459px;
+	top: 458px;
 	left: 45px;
 	border-radius: 2px;
 	background-color: var(--white);
