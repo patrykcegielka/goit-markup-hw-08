@@ -536,7 +536,7 @@ figure {
 	fill: var(--white);
 	width: 65px;
 	height: 24px;
-	margin-left: -22px;
+	margin-left: -4px;
 	margin-top: -2px;
 }
 
@@ -550,7 +550,7 @@ figure {
 .form-input {
 	display: block;
 	padding: 0 0 0 30px;
-	margin: -7px 0 0 0;
+	margin: 3px 0 10px 0;
 	height: 40px;
 	width: 448px;
 	border-radius: 4px;
@@ -570,15 +570,15 @@ figure {
 	width: 20px;
 }
 .icon-position1 {
-	top: 140px;
+	top: 126px;
 	left: 52px;
 }
 .icon-position2 {
-	top: 212px;
+	top: 192px;
 	left: 52px;
 }
 .icon-position3 {
-	top: 283px;
+	top: 258px;
 	left: 51px;
 }
 /*Sekcja "Komentarz" zadanie domowe nr 6*/
@@ -596,7 +596,7 @@ figure {
 	width: 11px;
 	height: 8px;
 	left: 47px;
-	top: 484px;
+	top: 463px;
 	z-index: 999;
 	fill: var(--white);
 }
@@ -619,7 +619,7 @@ figure {
 	cursor: pointer;
 	height: 15px;
 	width: 16px;
-	top: 480px;
+	top: 459px;
 	left: 45px;
 	border-radius: 2px;
 	background-color: var(--white);
