@@ -628,9 +628,8 @@ svg .tick{
 	background-color: var(--white);
 	border: var(--nblack) 2px solid;
 }
-.link-terms:hover {
+.link-terms {
 	color: var(--blue);
-	transition: .3s;
 	text-decoration: none;
 }
 
