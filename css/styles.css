@@ -329,7 +329,6 @@ body {
 	flex-direction: column;
 	flex-direction: row;
 	color: var(--white);
-	margin-left: 215px;
 }
 /*SVG- images style*/
 .icons-header {
