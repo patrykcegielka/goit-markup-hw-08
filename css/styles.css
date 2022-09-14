@@ -635,6 +635,7 @@ svg .tick{
 .link-terms:hover{
 	color:var(--iconcolor);
 	transition: .2s;
+	text-decoration: none;
 }
 
 /*Sekcja pseudoklas dla formularza zadanie domowe 6*/
