@@ -599,6 +599,7 @@ figure {
 	top: 462px;
 	z-index: 999;
 	fill: var(--white);
+	cursor:pointer;
 }
 .terms-and-conditions {
 	font-size: 14px;
