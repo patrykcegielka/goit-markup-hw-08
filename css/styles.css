@@ -628,6 +628,14 @@ svg .tick{
 	background-color: var(--white);
 	border: var(--nblack) 2px solid;
 }
+.link-terms {
+	color: var(--blue);
+	transition: .3s;
+}
+.link-terms:hover{
+	color:var(--iconcolor);
+	transition: .2s;
+}
 
 /*Sekcja pseudoklas dla formularza zadanie domowe 6*/
 .form-comment::placeholder {
