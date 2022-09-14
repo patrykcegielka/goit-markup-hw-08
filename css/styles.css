@@ -600,7 +600,7 @@ figure {
 	z-index: 999;
 	fill: var(--white);
 }
-svg.tick{
+svg .tick{
 	cursor: pointer;
 }
 .terms-and-conditions {
