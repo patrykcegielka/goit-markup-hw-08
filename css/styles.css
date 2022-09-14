@@ -630,12 +630,10 @@ figure {
 .link-terms {
 	color: var(--blue);
 }
-.link-terms{
+.link-terms:hover{
 	color:var(--grey);
 	text-decoration: none;
-	transition: .2s;
 }
-
 /*Sekcja pseudoklas dla formularza zadanie domowe 6*/
 .form-comment::placeholder {
 	color: rgba(117, 117, 117, 0.658);
