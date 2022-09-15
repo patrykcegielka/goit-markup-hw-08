@@ -326,8 +326,9 @@ body {
 }
 .footer-container {
 	display: flex;
-	flex-direction: column;
-	flex-direction: row;
+    justify-content: right;
+    flex-direction: row;
+    gap: 60px;
 	color: var(--white);
 }
 /*SVG- images style*/
@@ -401,7 +402,6 @@ body {
 	font-weight: 700;
 	color: var(--white);
 	text-transform: uppercase;
-	margin-left: 70px;
 	margin-bottom: 20px;
 }
 .footer-contacts {
@@ -410,7 +410,6 @@ body {
 .footer-icons {
 	display: flex;
 	list-style: none;
-	margin-left: 70px;
 	gap: 10px;
 	padding: 0;
 }
@@ -483,14 +482,12 @@ figure {
 /*Newsletter (Footer) zadanie domowe nr 6*/
 .sign-up-header {
 	font-weight: 700;
-	margin: 18px 0 20px 78px;
 	text-transform: uppercase;
 	color: var(--white);
 }
 .sign-up {
 	height: 50px;
 	width: 358px;
-	margin: 0 0 0 77px;
 	padding: 15px;
 	border-radius: 4px;
 	background-color: rgba(0, 0, 0, 0);
@@ -502,7 +499,6 @@ figure {
 	border-radius: 4px;
 	border-style: none;
 	padding-right: 42px;
-	margin-left: 12px;
 	width: 200px;
 	height: 50px;
 	color: var(--white);
