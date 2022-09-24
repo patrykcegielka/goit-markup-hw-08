@@ -25,54 +25,30 @@ body {
 	margin: 0;
 	padding: 0;
 }
-.footer-links:hover,
-.footer-links:focus,
-.blue-text:hover,
-.blue-text:focus {
+.wrapper {
+	background-color: var(--white);
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* ----- HEADER ------ */
+.header__container {
+	align-items: center;
+	gap: 93px;
+	flex-direction: row;
+	padding: 25px 0 26px 0;
+	display: flex;
+	width: 1200px;
+	margin: 0 auto;
+}
+.header__logo-color {
 	color: var(--blue);
 }
-.blue-text {
+.header__logo-color:hover,
+.header__logo-color:focus {
 	color: var(--blue);
 }
-.contact-style {
-	color: var(--grey);
-	text-decoration: none;
-	font-family: "Roboto";
-	font-weight: 500;
-}
-.contact-style:hover {
-	color: var(--blue);
-}
-.link {
-	font-weight: 500;
-	color: var(--nblack);
-	text-decoration: none;
-}
-.link:hover {
-	color: var(--blue);
-}
-.link:active {
-	color: var(--blue);
-}
-.link-active {
-	color: var(--blue);
-	text-decoration: none;
-	font-weight: 500;
-}
-.logo-white-text {
-	color: var(--white);
-	text-decoration: none;
-	font-size: 26px;
-	font-weight: 700;
-	letter-spacing: 0.03em;
-	line-height: 31px;
-}
-.address-text {
-	margin: 20px 0 0 0;
-	font-family: "Roboto";
-	font-style: normal;
-}
-.style-logo {
+.header__logo {
 	font-family: "Raleway";
 	color: var(--black);
 	font-size: 26px;
@@ -81,111 +57,70 @@ body {
 	line-height: 31px;
 	text-decoration: none;
 }
-.footer {
-	width: 100%;
-	background-color: var(--darkgrey);
-	padding: 60px 0;
-}
-.top-text-style {
-	font-family: "Roboto";
-	color: var(--white);
-	font-weight: 900;
-	font-size: 44px;
-	letter-spacing: 0.06em;
-	line-height: 1.364;
-	text-align: center;
-	margin: 0;
-}
-.speciality-header {
-	width: 270px;
-	height: 16px;
-	color: var(--nblack);
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 700;
-	line-height: 16px;
-	letter-spacing: 0.03em;
-}
-.speciality-text {
-	width: 270px;
-	height: 75px;
-	font-weight: 400;
-	line-height: 24px;
-	letter-spacing: 0.03em;
-	color: var(--grey);
-}
-.button-order-service {
-	background-color: var(--blue);
-	border-radius: 4px;
-	border-style: none;
-	width: 200px;
-	height: 50px;
-	color: var(--white);
-	cursor: pointer;
-	font-size: 16px;
-	font-weight: 700;
-	font-family: "Roboto";
-	transition: 0.2s;
-}
-.button-order-service:hover {
-	box-shadow: 2px 2px 10px var(--darkgrey);
-	transition: 0.3s;
-	background-color: var(--grey);
-	transform: scale(1.05) translateY(0.125rem);
-}
-
-.card-name {
-	color: var(--nblack);
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 1.1875;
-	margin: 30px 0 10px 0;
-}
-.card-proffesion {
-	font-size: 16px;
-	letter-spacing: 0.03em;
-	color: var(--grey);
-	margin: 0 0 30px 0;
-}
-.footer-links {
-	color: var(--footerlinks);
-	padding: 0;
-	display: block;
-	margin: 9px 0 9px 0;
-}
-/* Stylizacja model blokowy zadanie numer 3*/
-.wrapper {
-	background-color: var(--white);
-	width: 100%;
-	margin: 0 auto;
-}
-.container {
-	width: 1200px;
-	margin: 0 auto;
-}
-.header {
-	align-items: center;
-	gap: 93px;
-	flex-direction: row;
-	padding: 25px 0 26px 0;
-	display: flex;
-}
-.nav-style {
+.header__nav {
 	gap: 46px;
 	line-height: 1.2;
 	padding: 0;
-}
-.nav-list {
 	display: flex;
 	list-style: none;
 	line-height: 1.2;
 	margin: 0;
 }
-.contacts-style {
-	gap: 50px;
-	padding: 0 0 0 278px;
-	margin: 0;
+.header__nav-color {
+	color: var(--blue);
+	text-decoration: none;
+	font-weight: 500;
 }
+.header__nav-link {
+	text-decoration: none;
+	color: var(--nblack);
+	font-weight: 500;
+}
+.header__nav-link:hover,
+.header__nav-link:active {
+	color: var(--blue);
+}
+.header__contacts {
+	display: flex;
+	gap: 50px;
+	margin-left: auto;
+}
+.header__contacts-color {
+	color: var(--grey);
+	text-decoration: none;
+	font-family: "Roboto";
+	font-weight: 500;
+}
+.header__contacts-color:hover {
+	color: var(--blue);
+}
+.header__icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	fill: var(--grey);
+}
+.header__icons:hover {
+	fill: var(--blue);
+}
+.icon-spacing {
+	margin-right: 10px;
+	margin-bottom: 3px;
+}
+.header__actives::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 4px;
+	bottom: 0;
+	left: 0;
+	background-color: var(--blue);
+	transform: translateY(31px);
+	border-radius: 2px;
+}
+
+/*----- TOP SECTION ----*/
+
 .top-section {
 	background-image: url("https://raw.githubusercontent.com/patrykcegielka/goit-markup-hw-04/main/images/background.jpg");
 	background-color: var(--background);
@@ -201,151 +136,47 @@ body {
 	align-items: center;
 	padding: 200px 0;
 }
-.section {
-	padding: 94px 0 0 0;
-	display: flex;
-	flex-direction: column;
+.top-section__header {
+	font-family: "Roboto";
+	color: var(--white);
+	font-weight: 900;
+	font-size: 44px;
+	letter-spacing: 0.06em;
+	line-height: 1.364;
+	text-align: center;
+	margin: 0;
 }
-.article-shorts {
+.top-section__button {
+	background-color: var(--blue);
+	border-radius: 4px;
+	border-style: none;
+	width: 200px;
+	height: 50px;
+	color: var(--white);
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: "Roboto";
+	transition: 0.2s;
+}
+.top-section__button:hover {
+	box-shadow: 2px 2px 10px var(--darkgrey);
+	transition: 0.3s;
+	background-color: var(--grey);
+	transform: scale(1.05) translateY(0.125rem);
+}
+/*-------OUR SPECIALITY-------*/
+
+.our-speciality {
 	display: flex;
 	gap: 30px;
 	justify-content: center;
 	list-style-type: none;
-}
-.section-header {
-	font-weight: 700;
-	font-size: 36px;
-	color: var(--nblack);
-	text-align: center;
-	margin: 0px 0 50px 0;
-}
-.services-list {
+	padding: 94px 0 0 0;
 	display: flex;
 	flex-direction: row;
-	gap: 30px;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	justify-content: center;
 }
-.section-grey {
-	background-color: var(--nwhite);
-	padding: 94px 0;
-}
-.team-tiles {
-	align-items: center;
-	flex-direction: column;
-}
-.team-list {
-	display: flex;
-	flex-direction: row;
-	gap: 30px;
-	list-style: none;
-	justify-content: center;
-	padding: 0;
-	margin: 0;
-}
-.team-card {
-	background-color: var(--white);
-	box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
-		0px 2px 1px rgb(0 0 0 / 20%);
-	border-radius: 0px 0px 4px 4px;
-	text-align: center;
-	margin: 0;
-}
-.address-style {
-	display: flex;
-	gap: 50px;
-	margin-left: auto;
-}
-.line-header {
-	border-bottom: var(--lightwhite) solid 1px;
-}
-.filter-buttons {
-	display: flex;
-	justify-content: center;
-	gap: 8px;
-	margin: 94px 0 0 0;
-	list-style: none;
-}
-.filter-button {
-	background-color: var(--nwhite);
-	border-width: 0;
-	height: 38px;
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 26px;
-	border-radius: 3px;
-	padding: 6px 22px;
-	font-family: "Roboto";
-	cursor: pointer;
-	transition: 0.2s;
-}
-.filter-button:hover {
-	background-color: var(--blue);
-	color: var(--white);
-	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
-	transition: 0.3s;
-}
-.product-container {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 30px;
-	margin-top: 50px;
-	margin-bottom: 94px;
-	list-style: none;
-	justify-content: center;
-	padding: 0;
-}
-.product-card {
-	border: var(--bordercolor) solid 1px;
-	flex-basis: calc((100% - 90px) / 3);
-	height: 404px;
-	margin: 0;
-}
-.product-card:hover {
-	cursor: pointer;
-	border: 1px solid rgba(238, 238, 238, 1);
-	box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-}
-.product-card-header {
-	color: var(--nblack);
-	letter-spacing: 0.06em;
-	height: 700;
-	margin: 20px 0px 4px 24px;
-	font-size: 18px;
-	line-height: 1.71;
-}
-.product-card-text {
-	color: var(--grey);
-	letter-spacing: 0.03em;
-	height: 400;
-	margin: 0px 0px 0px 24px;
-	font-size: 16px;
-	line-height: 1.6;
-}
-.footer-container {
-	display: flex;
-    justify-content: right;
-    flex-direction: row;
-    gap: 60px;
-	color: var(--white);
-}
-/*SVG- images style*/
-.icons-header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	fill: var(--grey);
-}
-.icon-spacing {
-	margin-right: 10px;
-	margin-bottom: 3px;
-}
-.icons-header:hover {
-	fill: var(--blue);
-}
-.speciality-icons {
+.our-speciality__icons {
 	background-color: var(--nwhite);
 	width: 270px;
 	height: 120px;
@@ -354,26 +185,130 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-.team-card-icons {
+.our-speciality__header {
+	width: 270px;
+	height: 16px;
+	color: var(--nblack);
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+}
+.our-speciality__text {
+	width: 270px;
+	height: 75px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.03em;
+	color: var(--grey);
+}
+
+/*------- BLOCK section,h2 -------*/
+.block__background {
+	padding: 94px 0 0 0;
+	display: flex;
+	flex-direction: column;
+}
+.block__header {
+	font-weight: 700;
+	font-size: 36px;
+	color: var(--nblack);
+	text-align: center;
+	margin: 0px 0 50px 0;
+}
+/*------- SERVICES -------*/
+
+.services__list {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+}
+.services__description {
+	color: var(--white);
+	font-weight: 700;
+	background-color: rgba(47, 48, 58, 0.8);
+	height: 70px;
+	font-family: Roboto;
+	text-align: center;
+	position: relative;
+	text-transform: uppercase;
+	padding: 27px 0;
+	top: -72px;
+}
+figure {
+	margin: 0;
+}
+
+/*----- TEAM ------*/
+
+.team__background {
+	background-color: var(--nwhite);
+	padding: 94px 0;
+}
+
+.team__tiles {
+	align-items: center;
+	flex-direction: column;
+}
+.team__list {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	list-style: none;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+}
+.team__card {
+	background-color: var(--white);
+	box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+		0px 2px 1px rgb(0 0 0 / 20%);
+	border-radius: 0px 0px 4px 4px;
+	text-align: center;
+	margin: 0;
+}
+.team__card-name {
+	color: var(--nblack);
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.1875;
+	margin: 30px 0 10px 0;
+}
+
+.team__card-proffesion {
+	font-size: 16px;
+	letter-spacing: 0.03em;
+	color: var(--grey);
+	margin: 0 0 30px 0;
+}
+.team__card-icon {
 	display: flex;
 	gap: 10px;
 	margin-bottom: 30px;
 	justify-content: center;
 }
-.card-icons {
+.team__card-icons {
 	height: 44px;
 	width: 44px;
 	background-color: var(--white);
 	fill: var(--iconcolor);
 	border-radius: 50%;
 }
-.card-icons:hover {
+.team__card-icons:hover {
 	cursor: pointer;
 	fill: var(--white);
 	background-color: var(--blue);
 	border-color: var(--blue);
 }
-.section-clients {
+
+/*-------CLIENT SECTION ---- */
+
+.client__section {
 	padding: 94px 0;
 	display: flex;
 	justify-content: center;
@@ -381,12 +316,13 @@ body {
 	flex-direction: column;
 	background-color: var(--white);
 }
-.client-logos {
+.client__logos {
 	display: flex;
 	gap: 30px;
 	list-style: none;
+	padding: 0;
 }
-.client-logo {
+.client__logo {
 	height: 92px;
 	width: 170px;
 	border-radius: 4px;
@@ -394,36 +330,134 @@ body {
 	border: 1px solid rgba(175, 177, 184, 1);
 	fill: var(--iconcolor);
 }
-.client-logo:hover {
+.client__logo:hover {
 	border-color: var(--blue);
 	fill: var(--blue);
 }
-.footer-header {
+
+/*------ FOOTER ----- */
+
+.footer {
+	width: 100%;
+	background-color: var(--darkgrey);
+	padding: 60px 0;
+}
+.footer__container {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	gap: 60px;
+	color: var(--white);
+}
+.footer__logo {
+	font-family: "Raleway";
+	color: var(--white);
+	text-decoration: none;
+	font-size: 26px;
+	font-weight: 700;
+	letter-spacing: 0.03em;
+	line-height: 31px;
+}
+.footer__logo-color {
+	color: var(--blue);
+}
+.footer__address {
+	margin: 20px 0 0 0;
+	font-family: "Roboto";
+	font-style: normal;
+}
+.footer__links {
+	color: var(--footerlinks);
+	padding: 0;
+	display: block;
+	margin: 9px 0 9px 0;
+	text-decoration: none;
+}
+.footer__links:hover,
+.footer__links:focus {
+	color: var(--blue);
+}
+
+.footer__header {
 	font-weight: 700;
 	color: var(--white);
 	text-transform: uppercase;
 	margin-bottom: 20px;
 }
-.footer-contacts {
-	width: 246px;
-}
-.footer-icons {
+.footer__icons {
 	display: flex;
 	list-style: none;
 	gap: 10px;
 	padding: 0;
 }
-.footer-icon {
+.footer__icon {
 	height: 44px;
 	width: 44px;
 	border-radius: 50%;
 	background-color: var(--footericon);
 	fill: var(--white);
 }
-.footer-icon:hover {
+.footer__icon:hover {
 	background-color: var(--blue);
 }
-/* Formularz - kod - zadanie 5*/
+.footer__sign-up {
+	height: 50px;
+	width: 358px;
+	padding: 15px;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	transition: 0.2s;
+}
+
+.footer__button{
+	background-color: var(--blue);
+	border-radius: 4px;
+	border-style: none;
+	padding-right: 42px;
+	width: 200px;
+	height: 50px;
+	color: var(--white);
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: "Roboto";
+	transition: 0.2s;
+}
+.footer__button:hover {
+	transition: 0.3s;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	background-color: var(--footericon);
+}
+.footer__button:active {
+	border: 1px solid var(--blue);
+	box-shadow: none;
+}
+.footer__sign-up:hover,
+.footer__sign-up:active,
+.footer__sign-up:focus {
+	border: 1px solid var(--blue);
+	box-shadow: none;
+	outline: none;
+	color: var(--white);
+	transition: 0.2s;
+}
+.footer__button-logo {
+	position: absolute;
+	fill: var(--white);
+	width: 65px;
+	height: 24px;
+	margin-left: -4px;
+	margin-top: -2px;
+}
+
+/*----------MODAL --------*/
+.is-hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: all 250ms ease-in;
+}
 .backdrop {
 	position: fixed;
 	left: 0;
@@ -446,7 +480,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 }
-.close-btn {
+.modal__close-btn {
 	position: absolute;
 	top: 8px;
 	right: 8px;
@@ -457,92 +491,23 @@ body {
 	width: 30px;
 	height: 30px;
 }
-.is-hidden {
-	opacity: 0;
-	visibility: hidden;
-	pointer-events: none;
-	transition: all 250ms ease-in;
-}
-.picture-description {
-	color: var(--white);
-	font-weight: 700;
-	background-color: rgba(47, 48, 58, 0.8);
-	height: 70px;
-	font-family: Roboto;
-	text-align: center;
-	position: relative;
-	text-transform: uppercase;
-	padding: 27px 0;
-	top: -72px;
-}
-figure {
-	margin: 0;
-}
-
-/*Newsletter (Footer) zadanie domowe nr 6*/
-.sign-up-header {
-	font-weight: 700;
-	text-transform: uppercase;
-	color: var(--white);
-}
-.sign-up {
-	height: 50px;
-	width: 358px;
-	padding: 15px;
-	border-radius: 4px;
-	background-color: rgba(0, 0, 0, 0);
-	border: 1px solid rgba(255, 255, 255, 0.3);
-	transition: 0.2s;
-}
-.button-newsletter {
-	background-color: var(--blue);
-	border-radius: 4px;
-	border-style: none;
-	padding-right: 42px;
-	width: 200px;
-	height: 50px;
-	color: var(--white);
-	cursor: pointer;
-	font-size: 16px;
-	font-weight: 700;
-	font-family: "Roboto";
-	transition: 0.2s;
-}
-.button-newsletter:hover {
-	transition: 0.3s;
-	border: 1px solid rgba(255, 255, 255, 0.3);
-	background-color: var(--footericon);
-}
-.button-newsletter:active {
-	border: 1px solid var(--blue);
-	box-shadow: none;
-}
-.sign-up:hover,
-.sign-up:active,
-.sign-up:focus {
-	border: 1px solid var(--blue);
+.modal__hover:hover > .form-input,
+.modal__hover:focus > .form-input {
+	border: var(--blue) 1px solid;
 	box-shadow: none;
 	outline: none;
-	color: var(--white);
-	transition: 0.2s;
 }
-.sign-up-logo-bn {
-	position: absolute;
-	fill: var(--white);
-	width: 65px;
-	height: 24px;
-	margin-left: -4px;
-	margin-top: -2px;
+.modal__hover:hover > .form-icons,
+.modal__hover:focus > .form-icons {
+	fill: var(--blue);
 }
-
-/*Formularz zawartość zadanie domowe nr 6*/
-.form-header {
+.modal__header {
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 2.3px;
 	color: var(--nblack);
 }
-.form-input {
+.modal__input {
 	display: block;
 	padding: 0 0 0 30px;
 	margin: 3px 0 10px 0;
@@ -552,32 +517,24 @@ figure {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.text-form {
-	margin: 11px 0 14px 0;
-	font-family: Roboto;
-	font-weight: 400;
-	line-height: 14px;
-	letter-spacing: 0.01em;
-}
-.form-icons {
+.modal__icons {
 	position: absolute;
 	height: 20px;
 	width: 20px;
 }
-.icon-position1 {
+.modal__icon-position1 {
 	top: 126px;
 	left: 52px;
 }
-.icon-position2 {
+.modal__icon-position2 {
 	top: 192px;
 	left: 52px;
 }
-.icon-position3 {
+.modal__icon-position3 {
 	top: 258px;
 	left: 51px;
 }
-/*Sekcja "Komentarz" zadanie domowe nr 6*/
-.form-comment {
+.modal__comment {
 	height: 120px;
 	width: 448px;
 	padding: 12px 16px;
@@ -585,8 +542,31 @@ figure {
 	resize: none;
 	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/*Sekcja regulamin dla formularza zadanie domowe 6*/
-.tick {
+.modal__comment::placeholder {
+	color: rgba(117, 117, 117, 0.658);
+}
+.modal__comment:hover,
+.modal__comment:focus,
+.modal__comment:active {
+	border: var(--blue) 1px solid;
+	box-shadow: none;
+	outline: none;
+}
+.modal__terms-and-conditions {
+	font-size: 14px;
+	padding: 15px 0 20px 0;
+}
+.modal__terms-and-conditions input {
+	position: absolute;
+	opacity: 0;
+	height: 0;
+	width: 0;
+}
+.modal__terms-and-conditions input:checked ~ .checkmark {
+	background-color: var(--blue);
+	border: none;
+}
+.modal__tick {
 	position: absolute;
 	width: 11px;
 	height: 8px;
@@ -596,22 +576,7 @@ figure {
 	fill: var(--white);
 	cursor: pointer;
 }
-
-.terms-and-conditions {
-	font-size: 14px;
-	padding: 15px 0 20px 0;
-}
-.terms-and-conditions input {
-	position: absolute;
-	opacity: 0;
-	height: 0;
-	width: 0;
-}
-.terms-and-conditions input:checked ~ .checkmark {
-	background-color: var(--blue);
-	border: none;
-}
-.checkmark {
+.modal__checkmark {
 	position: absolute;
 	cursor: pointer;
 	height: 15px;
@@ -622,42 +587,117 @@ figure {
 	background-color: var(--white);
 	border: var(--nblack) 2px solid;
 }
-.link-terms {
+.modal__links {
 	color: var(--blue);
 }
-.link-terms:hover{
-	color:var(--grey);
+.modal__links:hover {
+	color: var(--grey);
 	text-decoration: none;
 }
-/*Sekcja pseudoklas dla formularza zadanie domowe 6*/
-.form-comment::placeholder {
-	color: rgba(117, 117, 117, 0.658);
+.modal__button {
+	background-color: #2196f3;
+	border-radius: 4px;
+	width: 200px;
+	height: 50px;
+	border: none;
+	color: #fff;
+	font-weight: 700;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s;
 }
-.form-comment:hover,
-.form-comment:focus,
-.form-comment:active {
-	border: var(--blue) 1px solid;
-	box-shadow: none;
-	outline: none;
+.modal__button:hover{
+	box-shadow: 2px 2px 10px var(--darkgrey);
+	transition: .3s;
+	background-color: var(--grey);
+	transform: scale(1.05) translateY(0.125rem);
 }
-.form-hover:hover > .form-input,
-.form-hover:focus > .form-input {
-	border: var(--blue) 1px solid;
-	box-shadow: none;
-	outline: none;
+
+/* ----- PORTFOLIO ------ */
+
+.header__line-border {
+	border-bottom: var(--lightwhite) solid 1px;
 }
-.form-hover:hover > .form-icons,
-.form-hover:focus > .form-icons {
-	fill: var(--blue);
+
+/* ------ FILTER ---------- */
+
+.filter__buttons {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	margin: 94px 0 0 0;
+	list-style: none;
 }
-/* Portfolio anime product - zadanie domowe numer 5*/
-.product-info {
+.filter__button {
+	background-color: var(--nwhite);
+	border-width: 0;
+	height: 38px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 26px;
+	border-radius: 3px;
+	padding: 6px 22px;
+	font-family: "Roboto";
+	cursor: pointer;
+	transition: 0.2s;
+}
+.filter__button:hover {
+	background-color: var(--blue);
+	color: var(--white);
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+	transition: 0.3s;
+}
+
+/* ------ PRODUCT ----- */
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+.product {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	margin-top: 50px;
+	margin-bottom: 94px;
+	list-style: none;
+	justify-content: center;
+	padding: 0;
+}
+.product__card {
+	border: var(--bordercolor) solid 1px;
+	flex-basis: calc((100% - 90px) / 3);
+	height: 404px;
+	margin: 0;
+}
+.product__card:hover {
+	cursor: pointer;
+	border: 1px solid rgba(238, 238, 238, 1);
+	box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+}
+.product__card-header {
+	color: var(--nblack);
+	letter-spacing: 0.06em;
+	height: 700;
+	margin: 20px 0px 4px 24px;
+	font-size: 18px;
+	line-height: 1.71;
+}
+.product__card-text {
+	color: var(--grey);
+	letter-spacing: 0.03em;
+	height: 400;
+	margin: 0px 0px 0px 24px;
+	font-size: 16px;
+	line-height: 1.6;
+}
+.product__hidden {
 	position: absolute;
 	max-width: 370px;
 	max-height: 294px;
 	overflow: hidden;
 }
-.product-anime {
+.product__slidein {
 	transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 	transform: translateY(100%);
 	background-color: rgba(33, 150, 243, 0.9);
@@ -671,17 +711,6 @@ figure {
 	padding-left: 24px;
 	padding-top: 20px;
 }
-.product-info:hover .product-anime {
+.product__hidden:hover .product__slidein {
 	transform: translateY(0);
-}
-.page-actives::after {
-	content: "";
-	display: block;
-	width: 100%;
-	height: 4px;
-	bottom: 0;
-	left: 0;
-	background-color: var(--blue);
-	transform: translateY(31px);
-	border-radius: 2px;
 }
