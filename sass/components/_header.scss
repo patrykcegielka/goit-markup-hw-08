@@ -1,0 +1,30 @@
+.header {
+	&__container {
+        @include flex(row);
+		align-items: center;
+		gap: 93px;
+		padding: 25px 0 26px 0;
+		width: 1200px;
+
+		&__logo {
+			font-family: $logo-font;
+			color: $logo-color;
+			font-size: map-get($font-size, logo-font);
+			font-weight: map-get($font-weight, bold);
+			letter-spacing: 0.03em;
+			line-height: 31px;
+
+			&-color {
+				color: $hover-text;
+			}
+		}
+	}
+}
+
+&__nav {
+    gap: 46px;
+	line-height: 1.2;
+	display: flex;
+	line-height: 1.2;
+
+}
