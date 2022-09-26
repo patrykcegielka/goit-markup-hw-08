@@ -1,6 +1,6 @@
 .header {
 	&__container {
-        @include flex(row);
+		@include flex(row);
 		align-items: center;
 		gap: 93px;
 		padding: 25px 0 26px 0;
@@ -13,18 +13,76 @@
 			font-weight: map-get($font-weight, bold);
 			letter-spacing: 0.03em;
 			line-height: 31px;
-
 			&-color {
+				color: $hover-text;
+			}
+			&:hover,
+			:focus {
 				color: $hover-text;
 			}
 		}
 	}
-}
+	&__nav {
+		@include flex(row);
+		@include nav-links;
+		gap: 46px;
+		&-color {
+			color: $secondary-text;
+			font-weight: map-get($font-weight, medium);
 
-&__nav {
-    gap: 46px;
-	line-height: 1.2;
-	display: flex;
-	line-height: 1.2;
+			&-link {
+				color: $secondary-text;
+				font-weight: map-get($font-weight, medium);
 
+				&:hover,
+				:active {
+					color: $hover-text;
+				}
+			}
+		}
+	}
+
+	&__contacts {
+		@include flex(row);
+		@include nav-links;
+		gap: 50px;
+		margin-left: auto;
+
+		&-color {
+			font-family: $standard-font;
+			font-weight: map-get($font-weight, medium);
+			color: $primary-text;
+			transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+			&:hover {
+				color: $hover-text;
+			}
+		}
+	}
+
+	&__icons {
+		@include flex(row);
+		justify-content: center;
+		align-items: center;
+		fill: $primary-color;
+
+		&:hover {
+			fill: $hover-text;
+		}
+	}
+	&__icon-spacing {
+		margin-right: 10px;
+		margin-bottom: 3px;
+	}
+	&__actives::after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 4px;
+		bottom: 0;
+		left: 0;
+		background-color: $hover-text;
+		transform: translateY(31px);
+		border-radius: 2px;
+	}
 }

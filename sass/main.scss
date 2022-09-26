@@ -1,6 +1,24 @@
-@import "./components/header";
-@import "./components/index-main";
+
+@import "./utils/colors";
 @import "./utils/resets";
 @import "./utils/fonts";
 @import "./utils/mixins";
-@import "./utils/colors";
+
+@import "./components/header";
+@import "./components/index.main";
+@import "./components/top-section";
+@import "./components/_our-speciality";
+
+
+body {
+	background-color: $primary-color;
+	color: $primary-text;
+	font-size: map-get($font-size, standard);
+	letter-spacing: map-get($letter-spacing, standard);
+}
+
+.wrapper {
+	background-color: $primary-color;
+	width: 100%;
+	margin: 0 auto;
+}

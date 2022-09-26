@@ -1,0 +1,23 @@
+.client {
+	&__section {
+		@include flexCenter(column);
+		padding: 94px 0;
+		background-color: $primary-color;
+	}
+	&__logos {
+		@include flex;
+		gap: 30px;
+	}
+	&__logo {
+		border-radius: 4px;
+		border: $icon-background solid 1px;
+		width: 170px;
+		height: 92px;
+		fill: $icon-background;
+		transition: 0.2s;
+		&:hover {
+			fill: $hover-text;
+			border-color: $hover-text;
+		}
+	}
+}

@@ -1,0 +1,53 @@
+.team {
+	&__background {
+		background-color: $background-card;
+		padding: 94px 0;
+	}
+	&__tiles {
+		@include flex(column);
+		align-items: center;
+	}
+	&__list {
+		@include flex(row);
+		gap: 30px;
+		justify-content: center;
+	}
+	&__card {
+		background-color: $primary-color;
+		box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+			0px 2px 1px rgb(0 0 0 / 20%);
+		border-radius: 0px 0px 4px 4px;
+		text-align: center;
+		&-name {
+			font-size: map-get($font-size, enlarged);
+			font-weight: map-get($font-weight, medium);
+			margin: 30px 0 10px 0;
+			line-height: 1.1875;
+			color: $secondary-text;
+		}
+		&-proffesion {
+			font-size: map-get($font-size, enlarged);
+			line-height: 1.1875;
+			margin: 0 0 30px 0;
+			color: $primary-text;
+		}
+		&-icon {
+			display: flex;
+			gap: 10px;
+			margin-bottom: 30px;
+			justify-content: center;
+		}
+		&-icons {
+			width: 44px;
+			height: 44px;
+			border-radius: 50%;
+			background-color: $primary-color;
+			fill: $icon-background;
+			transition: 0.2s;
+			&:hover {
+				@include hover-icon;
+				transition: 0.3s;
+			}
+		}
+	}
+}
