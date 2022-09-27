@@ -3,5 +3,109 @@
 	background-color: $background-footer;
 	padding: 60px 0;
 	&__container {
+		@include flex(row);
+		justify-content: center;
+		gap: 60px;
+		color: $primary-color;
+	}
+	&__logo {
+		font-family: $logo-font;
+		font-size: map-get($font-size, logo-font);
+		font-weight: map-get($font-weight, bold);
+		color: $primary-color;
+		line-height: 1.193;
+		&-color {
+			color: $hover-text;
+		}
+	}
+	&__address {
+		font-family: $standard-font;
+		font-style: normal;
+		margin: 20px 0 0 0;
+	}
+	&__links {
+		display: block;
+		margin: 9px 0 9px 0;
+		color: $footer-link;
+
+		&:hover,
+		:focus {
+			color: $hover-text;
+		}
+	}
+	&__header {
+		font-weight: map-get($font-weight, bold);
+		font-size: map-get($font-size, standard);
+		color: $primary-color;
+		text-transform: uppercase;
+		margin: 20px 0 20px 0px;
+	}
+	&__icons {
+		display: flex;
+		gap: 10px;
+		margin-bottom: 30px;
+	}
+	&__icon {
+		width: 44px;
+		height: 44px;
+		background-color: $footer-icon;
+		border-radius: 50%;
+		fill: $primary-color;
+		transition: 0.2s;
+		&:hover,
+		:focus {
+			@include hover-icon;
+		}
+	}
+	&__sign-up {
+		background-color: rgba(0, 0, 0, 0);
+		border: solid rgba(255, 255, 255, 0.3) 1px;
+		border-radius: 4px;
+		width: 358px;
+		height: 50px;
+		color: $hover-text;
+		padding: 15px;
+		transition: 0.2s;
+		&:hover,
+		:active,
+		:focus {
+			border: 1px solid $hover-text;
+			box-shadow: none;
+			outline: none;
+			color: $primary-color;
+			transition: 0.2s;
+		}
+	}
+	&__button {
+		background-color: $hover-text;
+		color: $primary-color;
+		width: 200px;
+		height: 50px;
+		align-items: center;
+		font-size: map-get($font-size, enlarged);
+		font-weight: map-get($font-weight, bold);
+		border-radius: 4px;
+		border-style: none;
+		margin-left: 12px;
+		padding-right: 42px;
+		cursor: pointer;
+		transition: 0.2s;
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.1);
+			border: 1px solid rgba(255, 255, 255, 0.3);
+			transition: 0.3s;
+		}
+		&:active {
+			border: 1px solid $hover-text;
+			box-shadow: none;
+		}
+		&-logo {
+			position: absolute;
+			margin-top: -2px;
+			margin-left: -4px;
+			width: 65px;
+			height: 24px;
+			fill: $primary-color;
+		}
 	}
 }

@@ -5,7 +5,7 @@
 		background-color: $primary-color;
 	}
 	&__logos {
-		@include flex;
+		display: flex;
 		gap: 30px;
 	}
 	&__logo {
