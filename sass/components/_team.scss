@@ -1,8 +1,9 @@
 .team {
-	background-color: $background-card;
-	padding: 94px 0;
-
-	&__container{
+	&__section {
+		background-color: $background-card;
+		padding: 94px 0;
+	}
+	&__container {
 		@include flex(column);
 		align-items: center;
 	}
