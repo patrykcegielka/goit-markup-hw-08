@@ -1,14 +1,17 @@
-.container {
-	width: 1200px;
-	margin: 0 auto;
-}
-
 .product {
-	@include flexCenter(row);
-	gap: 30px;
-	flex-wrap: wrap;
-	margin-top: 50px;
-	margin-bottom: 94px;
+	&__container {
+		width: 1200px;
+		margin: 0 auto;
+	}
+}
+.product {
+	&__header {
+		@include flexCenter(row);
+		gap: 30px;
+		flex-wrap: wrap;
+		margin-top: 50px;
+		margin-bottom: 94px;
+	}
 
 	&__card {
 		border: $border solid 1px;

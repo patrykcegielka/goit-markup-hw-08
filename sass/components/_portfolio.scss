@@ -2,14 +2,14 @@
 	border-bottom: $header-line solid 1px;
 }
 
-.filter {
-	&__buttons {
+.button {
+	&__header {
 		display: flex;
 		justify-content: center;
 		gap: 8px;
 		margin: 94px 0 0 0;
 	}
-	&__button {
+	&__filter {
 		background-color: $background-card;
 		border-width: 0;
 		height: 38px;
