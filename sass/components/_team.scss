@@ -1,9 +1,8 @@
 .team {
-	&__background {
-		background-color: $background-card;
-		padding: 94px 0;
-	}
-	&__tiles {
+	background-color: $background-card;
+	padding: 94px 0;
+
+	&__container{
 		@include flex(column);
 		align-items: center;
 	}

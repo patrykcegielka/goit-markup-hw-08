@@ -1,10 +1,10 @@
 .client {
-	&__section {
+	&__container{
 		@include flexCenter(column);
 		padding: 94px 0;
 		background-color: $primary-color;
 	}
-	&__logos {
+	&__header {
 		display: flex;
 		gap: 30px;
 	}

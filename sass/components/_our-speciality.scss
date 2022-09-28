@@ -1,35 +1,33 @@
 .our-speciality {
-    @include flexCenter(row);
-    gap: 30px;
-    padding: 94px 0 0 0;
-    justify-content: center;
-
-&__icons{
-    @include flexCenter(row);
-    border-radius: 4px;
-    height: 120px;
-    width: 270px;
-    background-color: $background-card;
-    justify-content: center;
-	align-items: center;
-}
-&__header{
-    font-weight: map-get($font-weight, bold);
-    font-size: map-get($font-size, standard);
-    font-family:$standard-font;
-    color: $secondary-text;
-    width: 270px;
-	height: 16px;
-}
-&__text{
-	font-weight: map-get($font-weight, regular);
-	letter-spacing: map-get($letter-spacing, standard);
-    line-height: 24px;
-	color: $primary-text;
-    width: 270px;
-	height: 75px;
-}
-
-
-
+	&__container {
+		@include flexCenter(row);
+		gap: 30px;
+		padding: 94px 0 0 0;
+		justify-content: center;
+	}
+	&__icon {
+		@include flexCenter(row);
+		border-radius: 4px;
+		height: 120px;
+		width: 270px;
+		background-color: $background-card;
+		justify-content: center;
+		align-items: center;
+	}
+	&__header {
+		font-weight: map-get($font-weight, bold);
+		font-size: map-get($font-size, standard);
+		font-family: $standard-font;
+		color: $secondary-text;
+		width: 270px;
+		height: 16px;
+	}
+	&__text {
+		font-weight: map-get($font-weight, regular);
+		letter-spacing: map-get($letter-spacing, standard);
+		line-height: 24px;
+		color: $primary-text;
+		width: 270px;
+		height: 75px;
+	}
 }
