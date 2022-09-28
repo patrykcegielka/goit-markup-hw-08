@@ -41,9 +41,9 @@
 	&__hidden {
 		max-width: 370px;
 		max-height: 294px;
-		position: absolute;
+		position: relative;
 		overflow: hidden;
-		&:hover .description-slidein {
+		&:hover .product__slidein {
 			transform: translateY(0);
 		}
 	}
@@ -52,8 +52,7 @@
 		transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		transform: translateY(100%);
 		background-color: rgba(33, 150, 243, 0.9);
-		display: inline-block;
-		position: relative;
+		position: absolute;
 		width: 374px;
 		height: 295px;
 		color: #fff;
@@ -61,5 +60,6 @@
 		line-height: 1.6;
 		padding-left: 24px;
 		padding-top: 20px;
+		top: 0;
 	}
 }
