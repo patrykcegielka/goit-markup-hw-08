@@ -1,5 +1,4 @@
-.header {
-	&__container {
+.header__container {
 		@include flex(row);
 		align-items: center;
 		gap: 93px;
