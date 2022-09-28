@@ -22,7 +22,7 @@
   padding: 25px 0 26px 0;
   width: 1200px;
 }
-.header__container__logo {
+.header__logo {
   font-family: "Raleway", sans-serif;
   color: #000000;
   font-size: 26px;
@@ -30,11 +30,11 @@
   letter-spacing: 0.03em;
   line-height: 31px;
 }
-.header__container__logo-color {
+.header__logo-color {
   color: #2196f3;
 }
-.header__container__logo:hover,
-.header__container__logo :focus {
+.header__logo:hover,
+.header__logo :focus {
   color: #2196f3;
 }
 .header__nav {
