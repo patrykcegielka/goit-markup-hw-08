@@ -3,8 +3,6 @@
 		width: 1200px;
 		margin: 0 auto;
 	}
-}
-.product {
 	&__header {
 		@include flexCenter(row);
 		gap: 30px;
