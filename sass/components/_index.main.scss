@@ -47,6 +47,10 @@
 	  font-size: map-get($font-size, enlarged);
 	  font-weight: map-get($font-weight, bold);
 	  letter-spacing: map-get($letter-spacing, header);
+	  &:hover {
+		background-color: rgba(104, 103, 103, 0.89);
+		border: 1px solid rgba(124, 122, 122, 0.87);
+		transition: 0.3s;
 	}
   }
   .our-speciality {
@@ -160,3 +164,4 @@
 	  }
 	}
   }
+}
