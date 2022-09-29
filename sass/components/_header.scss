@@ -37,7 +37,6 @@
 		margin-left: auto;
 
 		&-color {
-
 			color: $primary-text;
 			transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -56,8 +55,8 @@
 		background-color: $hover-text;
 		transform: translateY(31px);
 		border-radius: 2px;
-		&__active{
-			color:$hover-text;
+		&__active {
+			color: $hover-text;
 		}
 	}
 }
