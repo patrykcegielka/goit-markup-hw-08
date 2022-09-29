@@ -79,10 +79,6 @@
 .header__contacts-color:hover {
   color: #2196f3;
 }
-.header__icon-spacing {
-  margin-right: 10px;
-  margin-bottom: 3px;
-}
 .header__actives::after {
   content: "";
   display: block;
