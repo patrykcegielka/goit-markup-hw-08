@@ -21,7 +21,6 @@
 			cursor: pointer;
 			border: 1px solid rgba(238, 238, 238, 1);
 			box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-			
 		}
 	}
 	&__card-header {
@@ -39,13 +38,16 @@
 		line-height: 1.6;
 		font-size: map-get($font-size, standard);
 	}
+
 	&__hidden {
 		max-width: 370px;
 		max-height: 294px;
 		position: relative;
 		overflow: hidden;
-		&:hover .product__slidein {
-			transform: translateY(0);
+		&:hover {
+			.product__slidein {
+				transform: translateY(0);
+			}
 		}
 	}
 

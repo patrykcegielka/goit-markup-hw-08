@@ -91,6 +91,9 @@
 .header__actives::after__active {
   color: #2196f3;
 }
+.header svg {
+  margin: 0 10px 0 0;
+}
 
 .block__background {
   display: -webkit-box;
