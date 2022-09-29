@@ -125,7 +125,7 @@
 }
 
 .top-section {
-  background-image: url("https://raw.githubusercontent.com/patrykcegielka/goit-markup-hw-04/main/images/background.jpg");
+  background-image: url(https://github.com/BieganskiP/goit-markup-hw-04/blob/main/images/background.jpg?raw=true);
   background-color: rgba(47, 48, 58, 0.4);
   background-blend-mode: difference;
   background-position: center;
@@ -170,13 +170,8 @@
   font-weight: 700;
   letter-spacing: 0.06em;
 }
-.top-section__button:hover {
-  background-color: rgba(104, 103, 103, 0.89);
-  border: 1px solid rgba(124, 122, 122, 0.87);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.top-section .our-speciality {
+
+.our-speciality {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,7 +189,7 @@
   padding: 94px 0 0 0;
   justify-content: center;
 }
-.top-section .our-speciality__icon {
+.our-speciality__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,16 +209,17 @@
   width: 270px;
   background-color: #f5f4fa;
 }
-.top-section .our-speciality__header {
+.our-speciality__header {
   font-weight: 700;
   color: #212121;
   font-size: 14px;
   margin: 0 0 10px 0;
 }
-.top-section .our-speciality__text {
+.our-speciality__text {
   line-height: 1.71;
 }
-.top-section .our-services {
+
+.our-services {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,7 +235,7 @@
           flex-direction: row;
   gap: 30px;
 }
-.top-section .our-services__description {
+.our-services__description {
   color: #ffffff;
   font-weight: 700;
   background-color: rgba(47, 48, 58, 0.8);
@@ -250,11 +246,12 @@
   padding: 27px 0;
   top: -72px;
 }
-.top-section .our-services-card-size {
+.our-services-card-size {
   height: 294px;
   width: 370px;
 }
-.top-section .our-team {
+
+.our-team {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,7 +267,7 @@
           flex-direction: row;
   gap: 30px;
 }
-.top-section .our-team__card {
+.our-team__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -290,26 +287,26 @@
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.top-section .our-team__name {
+.our-team__name {
   margin: 30px 0 10px 0;
   line-height: 1.1875;
   font-size: 16px;
   font-weight: 500;
   color: #212121;
 }
-.top-section .our-team__profession {
+.our-team__profession {
   line-height: 1.1875;
   font-size: 16px;
   margin: 0 0 16px 0;
 }
-.top-section .our-team__icons {
+.our-team__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
   margin-bottom: 30px;
 }
-.top-section .our-team__icon {
+.our-team__icon {
   width: 44px;
   height: 44px;
   background-color: #ffffff;
@@ -318,13 +315,14 @@
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.top-section .our-team__icon:hover,
-.top-section .our-team__icon :focus {
+.our-team__icon:hover,
+.our-team__icon :focus {
   background-color: #2196f3;
   fill: #ffffff;
   cursor: pointer;
 }
-.top-section .our-clients {
+
+.our-clients {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,7 +338,7 @@
           flex-direction: row;
   gap: 30px;
 }
-.top-section .our-clients__logo {
+.our-clients__logo {
   border-radius: 4px;
   border: #afb1b8 solid 1px;
   width: 170px;
@@ -349,8 +347,8 @@
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.top-section .our-clients__logo:hover,
-.top-section .our-clients__logo :focus {
+.our-clients__logo:hover,
+.our-clients__logo :focus {
   fill: #2196f3;
   border: #2196f3 solid 1px;
 }
