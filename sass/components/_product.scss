@@ -42,7 +42,7 @@
 	&__hidden {
 		max-width: 370px;
 		max-height: 294px;
-		position: relative;
+		position: absolute;
 		overflow: hidden;
 		&:hover {
 			.product__slidein {
@@ -55,7 +55,7 @@
 		transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		transform: translateY(100%);
 		background-color: rgba(33, 150, 243, 0.9);
-		position: absolute;
+		position :relative;
 		width: 374px;
 		height: 295px;
 		color: #fff;
