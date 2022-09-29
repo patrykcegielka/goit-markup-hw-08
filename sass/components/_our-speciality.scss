@@ -1,10 +1,9 @@
 .our-speciality {
-	&__container {
 		@include flexCenter(row);
 		gap: 30px;
 		padding: 94px 0 0 0;
 		justify-content: center;
-	}
+	
 	&__icon {
 		@include flexCenter(row);
 		border-radius: 4px;

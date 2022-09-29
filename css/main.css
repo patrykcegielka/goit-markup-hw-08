@@ -795,7 +795,7 @@ figure {
   transition: 0.3s;
 }
 
-.our-speciality__container {
+.our-speciality {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
