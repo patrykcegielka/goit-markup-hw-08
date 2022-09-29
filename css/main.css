@@ -34,10 +34,6 @@
 .header__logo-color {
   color: #2196f3;
 }
-.header__logo:hover,
-.header__logo :focus {
-  color: #2196f3;
-}
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,8 +55,7 @@
   color: #212121;
   font-weight: 500;
 }
-.header__nav-color-link:hover,
-.header__nav-color-link :active {
+.header__nav-color-link:hover {
   color: #2196f3;
 }
 .header__contacts {
@@ -101,7 +96,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  fill: #ffffff;
+  color: #757575;
 }
 .header__icons:hover {
   fill: #2196f3;
@@ -864,10 +859,4 @@ body {
   color: #757575;
   font-size: 14px;
   letter-spacing: 0.03em;
-}
-
-.wrapper {
-  background-color: #ffffff;
-  width: 100%;
-  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

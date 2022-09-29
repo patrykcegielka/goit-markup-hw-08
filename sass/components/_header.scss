@@ -18,10 +18,6 @@
 		&-color {
 			color: $hover-text;
 		}
-		&:hover,
-		:focus {
-			color: $hover-text;
-		}
 	}
 	&__nav {
 		@include flex(row);
@@ -35,8 +31,7 @@
 				color: $secondary-text;
 				font-weight: map-get($font-weight, medium);
 
-				&:hover,
-				:active {
+				&:hover {
 					color: $hover-text;
 				}
 			}
@@ -65,7 +60,7 @@
 		@include flex(row);
 		justify-content: center;
 		align-items: center;
-		fill: $primary-color;
+		color: $primary-text;
 
 		&:hover {
 			fill: $hover-text;
