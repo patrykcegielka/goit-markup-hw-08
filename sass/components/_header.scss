@@ -23,11 +23,10 @@
 		&-color {
 			color: $secondary-text;
 			font-weight: map-get($font-weight, medium);
-
-			&-link {
-				color: $secondary-text;
-				font-weight: map-get($font-weight, medium);
-			}
+		}
+		&:hover,
+		:focus {
+			color: $hover-text;
 		}
 	}
 
@@ -50,16 +49,7 @@
 		}
 	}
 
-	&__icons {
-		@include flex(row);
-		justify-content: center;
-		align-items: center;
-		color: $primary-text;
 
-		&:hover {
-			fill: $hover-text;
-		}
-	}
 	&__icon-spacing {
 		margin-right: 10px;
 		margin-bottom: 3px;
@@ -74,5 +64,8 @@
 		background-color: $hover-text;
 		transform: translateY(31px);
 		border-radius: 2px;
+		&__active{
+			color:$hover-text;
+		}
 	}
 }

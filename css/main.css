@@ -50,9 +50,9 @@
   color: #212121;
   font-weight: 500;
 }
-.header__nav-color-link {
-  color: #212121;
-  font-weight: 500;
+.header__nav:hover,
+.header__nav :focus {
+  color: #2196f3;
 }
 .header__contacts {
   display: -webkit-box;
@@ -79,25 +79,6 @@
 .header__contacts-color:hover {
   color: #2196f3;
 }
-.header__icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #757575;
-}
-.header__icons:hover {
-  fill: #2196f3;
-}
 .header__icon-spacing {
   margin-right: 10px;
   margin-bottom: 3px;
@@ -113,6 +94,9 @@
   -webkit-transform: translateY(31px);
           transform: translateY(31px);
   border-radius: 2px;
+}
+.header__actives::after__active {
+  color: #2196f3;
 }
 
 .block__background {
