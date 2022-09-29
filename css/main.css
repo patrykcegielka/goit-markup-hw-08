@@ -612,6 +612,17 @@
   font-weight: 700;
   font-size: 16px;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.modal__button:hover {
+  -webkit-box-shadow: 1px 1px 5px rgba(116, 114, 114, 0.87);
+          box-shadow: 1px 1px 5px rgba(116, 114, 114, 0.87);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: rgba(73, 71, 71, 0.863);
+  -webkit-transform: scale(1.05) translateY(0.125rem);
+          transform: scale(1.05) translateY(0.125rem);
 }
 .modal__terms-and-conditions {
   font-size: 14px;

@@ -6,14 +6,14 @@
 	background-color: $background-backdrop;
 	position: fixed;
 	transition: all 250ms ease-in;
-  }
-  .is-hidden {
+}
+.is-hidden {
 	visibility: hidden;
 	opacity: 0;
 	pointer-events: none;
 	transition: all 250ms ease-in;
-  }
-  .modal {
+}
+.modal {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -27,138 +27,145 @@
 	font-size: 12px;
 	gap: 10px;
 	color: $primary-text;
-  
+
 	&__close-button {
-	  position: absolute;
-	  top: 8px;
-	  right: 8px;
-	  background-color: $primary-color;
-	  border: 1px solid rgba(0, 0, 0, 0.1);
-	  border-radius: 50%;
-	  cursor: pointer;
-	  width: 30px;
-	  height: 30px;
+		position: absolute;
+		top: 8px;
+		right: 8px;
+		background-color: $primary-color;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		border-radius: 50%;
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
 	}
 	&__header {
-	  font-size: 20px;
-	  font-weight: 700;
-	  line-height: 1.172;
-	  color: $secondary-text;
-	  margin: 40px 0 20px 0;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 1.172;
+		color: $secondary-text;
+		margin: 40px 0 20px 0;
 	}
-  
+
 	&__hover:hover > .modal__input,
 	&__hover:focus > .modal__input {
-	  border: $hover-text 1px solid;
-	  box-shadow: none;
-	  outline: none;
+		border: $hover-text 1px solid;
+		box-shadow: none;
+		outline: none;
 	}
 	&__hover:hover > .modal__icon,
 	&__hover:focus > .modal__icon {
-	  fill: $hover-text;
+		fill: $hover-text;
 	}
 	&__input {
-	  width: 448px;
-	  height: 40px;
-	  display: block;
-	  margin: 4px 0 0 0;
-	  border-radius: 4px;
-	  border: $border-color 1px solid;
-	  padding: 0 0 0 30px;
-	  outline: none;
-	  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		width: 448px;
+		height: 40px;
+		display: block;
+		margin: 4px 0 0 0;
+		border-radius: 4px;
+		border: $border-color 1px solid;
+		padding: 0 0 0 30px;
+		outline: none;
+		transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
 	&__comment {
-	  resize: none;
-	  width: 448px;
-	  height: 120px;
-	  padding: 12px 16px;
-	  border-radius: 4px;
-	  outline: none;
-	  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		resize: none;
+		width: 448px;
+		height: 120px;
+		padding: 12px 16px;
+		border-radius: 4px;
+		outline: none;
+		transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
-  
+
 	&__comment::placeholder {
-	  color: $placeholder-text;
+		color: $placeholder-text;
 	}
 	&__button {
-	  background-color: $hover-text;
-	  border-radius: 4px;
-	  width: 200px;
-	  height: 50px;
-	  border: none;
-	  color: $primary-color;
-	  font-weight: 700;
-	  font-size: 16px;
-	  cursor: pointer;
+		background-color: $hover-text;
+		border-radius: 4px;
+		width: 200px;
+		height: 50px;
+		border: none;
+		color: $primary-color;
+		font-weight: 700;
+		font-size: 16px;
+		cursor: pointer;
+		transition: 0.3s;
+		&:hover {
+			box-shadow: 1px 1px 5px rgba(116, 114, 114, 0.87);
+			transition: 0.3s;
+			background-color: rgba(73, 71, 71, 0.863);
+			transform: scale(1.05) translateY(0.125rem);
+		}
 	}
 	&__terms-and-conditions {
-	  font-size: 14px;
-	  padding: 10px 0 20px 0;
-  
-	  & input {
-		position: absolute;
-		opacity: 0;
-		height: 0;
-		width: 0;
-	  }
-	  & input:checked ~ .modal__checkmark {
-		background-color: $hover-text;
-		border: none;
-	  }
-	  :checked ~ .modal__checkmark:after {
-		display: block;
-	  }
+		font-size: 14px;
+		padding: 10px 0 20px 0;
+
+		& input {
+			position: absolute;
+			opacity: 0;
+			height: 0;
+			width: 0;
+		}
+		& input:checked ~ .modal__checkmark {
+			background-color: $hover-text;
+			border: none;
+		}
+		:checked ~ .modal__checkmark:after {
+			display: block;
+		}
 	}
 	&__checkmark {
-	  position: absolute;
-	  cursor: pointer;
-	  top: 455px;
-	  left: 45px;
-	  height: 16px;
-	  width: 16px;
-	  border-radius: 2px;
-	  background-color: $primary-color;
-	  border: $secondary-text 2px solid;
-	  &:after {
-		content: "";
 		position: absolute;
-		display: none;
-	  }
+		cursor: pointer;
+		top: 455px;
+		left: 45px;
+		height: 16px;
+		width: 16px;
+		border-radius: 2px;
+		background-color: $primary-color;
+		border: $secondary-text 2px solid;
+		&:after {
+			content: "";
+			position: absolute;
+			display: none;
+		}
 	}
 	&__tick {
-	  fill: $primary-color;
-	  width: 11px;
-	  height: 8px;
-	  position: absolute;
-	  left: 48px;
-	  top: 459px;
-	  z-index: 999;
-	  cursor: pointer;
+		fill: $primary-color;
+		width: 11px;
+		height: 8px;
+		position: absolute;
+		left: 48px;
+		top: 459px;
+		z-index: 999;
+		cursor: pointer;
 	}
 	&__links {
-	  text-decoration: underline;
-	  color: $hover-text;
+		text-decoration: underline;
+		color: $hover-text;
 	}
-  
+
 	&__icon {
-	  fill: $secondary-text;
-	  width: 15px;
-	  height: 13px;
-	  position: absolute;
-	  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-	  &-position1 {
-		top: 125px;
-		left: 52px;
-	  }
-	  &-position2 {
-		top: 194px;
-		left: 52px;
-	  }
-	  &-position3 {
-		top: 260px;
-		left: 52px;
-	  }
+		fill: $secondary-text;
+		width: 15px;
+		height: 13px;
+		position: absolute;
+		transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+		&-position1 {
+			top: 125px;
+			left: 52px;
+		}
+		&-position2 {
+			top: 194px;
+			left: 52px;
+		}
+		&-position3 {
+			top: 260px;
+			left: 52px;
+		}
 	}
-  }
+}
