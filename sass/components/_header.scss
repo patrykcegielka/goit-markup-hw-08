@@ -1,5 +1,5 @@
 .header {
-	 {
+	  {
 		@include flex(row);
 		align-items: center;
 		gap: 93px;
@@ -77,4 +77,5 @@
 		transform: translateY(31px);
 		border-radius: 2px;
 	}
+
 }
