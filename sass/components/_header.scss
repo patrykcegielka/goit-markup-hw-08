@@ -19,8 +19,8 @@
 		@include flex(row);
 		@include nav-links;
 		gap: 46px;
-		font-family: $standard-font;
 		&-color {
+			font-family: $standard-font;
 			color: $secondary-text;
 			font-weight: map-get($font-weight, medium);
 		}
@@ -35,11 +35,9 @@
 		@include nav-links;
 		gap: 50px;
 		margin-left: auto;
-		color: $primary-text;
 
 		&-color {
-			font-family: $standard-font;
-			font-weight: map-get($font-weight, medium);
+
 			color: $primary-text;
 			transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
