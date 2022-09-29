@@ -23,7 +23,6 @@
 			color: $hover-text;
 		}
 	}
-
 	&__nav {
 		@include flex(row);
 		@include nav-links;
