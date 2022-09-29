@@ -47,6 +47,13 @@
 	  font-size: map-get($font-size, enlarged);
 	  font-weight: map-get($font-weight, bold);
 	  letter-spacing: map-get($letter-spacing, header);
+	  transition: 0.3s;
+	  &:hover{
+		box-shadow: 1px 1px 5px rgba(116, 114, 114, 0.87);
+	transition: 0.3s;
+	background-color: rgba(73, 71, 71, 0.863);
+	transform: scale(1.05) translateY(0.125rem);
+	  }
 	}
   }
   .our-speciality {
