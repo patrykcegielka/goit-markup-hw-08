@@ -7,7 +7,7 @@
           box-sizing: border-box;
 }
 
-.header__container {
+.header__section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,8 +20,6 @@
           align-items: center;
   gap: 93px;
   padding: 25px 0 26px 0;
-  width: 1200px;
-  margin: 0 auto;
 }
 .header__logo {
   font-family: "Raleway", sans-serif;
@@ -46,6 +44,7 @@
   letter-spacing: 0.02em;
   line-height: 1.2;
   gap: 46px;
+  font-family: "Roboto", sans-serif;
 }
 .header__nav-color {
   color: #212121;
@@ -71,6 +70,7 @@
   line-height: 1.2;
   gap: 50px;
   margin-left: auto;
+  color: #757575;
 }
 .header__contacts-color {
   font-family: "Roboto", sans-serif;
@@ -859,4 +859,9 @@ body {
   color: #757575;
   font-size: 14px;
   letter-spacing: 0.03em;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

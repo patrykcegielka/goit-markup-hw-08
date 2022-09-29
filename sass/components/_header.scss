@@ -1,11 +1,9 @@
 .header {
-	&__container {
+	&__section {
 		@include flex(row);
 		align-items: center;
 		gap: 93px;
 		padding: 25px 0 26px 0;
-		width: 1200px;
-		margin: 0 auto;
 	}
 
 	&__logo {
@@ -23,6 +21,7 @@
 		@include flex(row);
 		@include nav-links;
 		gap: 46px;
+		font-family: $standard-font;
 		&-color {
 			color: $secondary-text;
 			font-weight: map-get($font-weight, medium);
@@ -43,6 +42,7 @@
 		@include nav-links;
 		gap: 50px;
 		margin-left: auto;
+		color: $primary-text;
 
 		&-color {
 			font-family: $standard-font;
