@@ -5,14 +5,11 @@
 
 @import "./components/header";
 @import "./components/index.main";
-@import "./components/slider";
-@import "./components/client";
 @import "./components/footer";
 @import "./components/modal";
 @import "./components/portfolio";
 @import "./components/product";
-@import "./components/team";
-@import "./components/our-speciality";
+
 
 body {
 	background-color: $primary-color;
