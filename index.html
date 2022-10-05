@@ -14,14 +14,15 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
 
-        
+
     <title>WebStudio</title>
 </head>
 
 <body>
+    <div>
     <header class="header container">
         <a href="index.html" class="header__logo"><span class="header__logo-color">Web</span>Studio</a>
-        <nav>
+        <nav class="header__nav-size">
             <ul class="header__nav">
                 <li>
                     <a href="index.html" class="header__nav-color header__active">Agencja</a>
@@ -51,6 +52,12 @@
                     +48 111 111 111</a>
             </li>
         </ul>
+        <button class="header__mobile js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="header__mobile-menu">
+                <use xlink:href="./images/icons.svg#mobile-menu" width="24" height="16"></use>
+            </svg>
+        </button>
+        </div>
     </header>
     <main>
         <section class="top-section">
@@ -122,7 +129,7 @@
                 </ul>
             </div>
         </section>
-        <section>
+        <section class="mobile-hidden">
             <div class="container block">
                 <h2 class="block__header">Czym się zajmujemy</h2>
                 <ul class="our-services">
@@ -161,8 +168,7 @@
                 <h2 class="block__header">Nasz zespół</h2>
                 <ul class="our-team">
                     <li class="our-team__card">
-                        <img src="images/product-desinger.jpg"
-                            width="270" height="260" alt="John Doe" />
+                        <img src="images/product-desinger.jpg" width="270" height="260" alt="John Doe" />
                         <h3 class="our-team__name">John Doe</h3>
                         <p class="our-team__profession">Product Designer</p>
                         <div class="our-team__icons">
@@ -193,8 +199,7 @@
                         </div>
                     </li>
                     <li class="our-team__card">
-                        <img src="images/frontend-developer.jpg"
-                            width="270" height="260" alt="John Doe" />
+                        <img src="images/frontend-developer.jpg" width="270" height="260" alt="John Doe" />
                         <h3 class="our-team__name">John Doe</h3>
                         <p class="our-team__profession">Frontend Developer</p>
                         <div class="our-team__icons">
@@ -225,8 +230,7 @@
                         </div>
                     </li>
                     <li class="our-team__card">
-                        <img src="images/marketing.jpg"
-                            width="270" height="260" alt="John Doe" />
+                        <img src="images/marketing.jpg" width="270" height="260" alt="John Doe" />
                         <h3 class="our-team__name">John Doe</h3>
                         <p class="our-team__profession">Marketing</p>
                         <div class="our-team__icons">
@@ -257,8 +261,7 @@
                         </div>
                     </li>
                     <li class="our-team__card">
-                        <img src="images/ul-designer.jpg"
-                            width="270" height="260" alt="John Doe" />
+                        <img src="images/ul-designer.jpg" width="270" height="260" alt="John Doe" />
                         <h3 class="our-team__name">John Doe</h3>
                         <p class="our-team__profession">UI Designer</p>
                         <div class="our-team__icons">
@@ -347,7 +350,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer>
         <div class="footer__container">
             <div>
                 <a href="index.html" class="footer__logo "><span class="footer__logo-color">Web</span>Studio</a>
@@ -371,8 +374,7 @@
                     <li>
                         <a href="#">
                             <svg class="footer__icon">
-                                <use xlink:href="./images/icons.svg#twitter-logo" width="20" height="20" x="12"
-                                    y="12">
+                                <use xlink:href="./images/icons.svg#twitter-logo" width="20" height="20" x="12" y="12">
                                 </use>
                             </svg>
                         </a>
@@ -380,8 +382,7 @@
                     <li>
                         <a href="#">
                             <svg class="footer__icon">
-                                <use xlink:href="./images/icons.svg#facebook-logo" width="20" height="20" x="12"
-                                    y="12">
+                                <use xlink:href="./images/icons.svg#facebook-logo" width="20" height="20" x="12" y="12">
                                 </use>
                             </svg>
                         </a>
@@ -389,8 +390,7 @@
                     <li>
                         <a href="#">
                             <svg class="footer__icon">
-                                <use xlink:href="./images/icons.svg#linkin-logo" width="20" height="20" x="12"
-                                    y="12">
+                                <use xlink:href="./images/icons.svg#linkin-logo" width="20" height="20" x="12" y="12">
                                 </use>
                             </svg>
                         </a>
@@ -458,7 +458,37 @@
             </label>
         </div>
     </div>
+    <div class="mobile js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="mobile__exit">
+                <use xlink:href="./images/icons.svg#x" width="18.67" height="18.67">
+                </use>
+            </svg>
+        </button>
+
+        <ul class="mobile__menu">
+            <li><a href="./index.html" class="mobile__menu-link">Agencja</a></li>
+            <li><a href="./portfolio.html" class="mobile__menu-link">Portfolio</a></li>
+            <li><a href="./contacts.html" class="mobile__menu-link">Kontakty</a></li>
+        </ul>
+        <div class="mobile__links">
+            <ul class="mobile__contacts">
+                <li><a href="tel:+48111111111" class="mobile__contacts-phone">+48 111 111 111</a></li>
+                <li><a href="mailto:info@devstudio.com" class="mobile__contacts-email">info@devstudio.com</a></li>
+            </ul>
+            <ul class="mobile__socials">
+                <li><a href="https://instagram.com" class="mobile__socials-link">Instagram</a></li>
+                <li class="mobile__socials-link">|</li>
+                <li><a href="https://twitter.com" class="mobile__socials-link">Twitter</a></li>
+                <li class="mobile__socials-link">|</li>
+                <li><a href="https://facebook.com" class="mobile__socials-link">Facebook</a></li>
+                <li class="mobile__socials-link">|</li>
+                <li><a href="https://linkedin.com" class="mobile__socials-link">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>

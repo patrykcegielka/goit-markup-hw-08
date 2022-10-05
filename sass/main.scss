@@ -4,10 +4,11 @@
 @import "./utils/mixins";
 
 @import "./components/header";
-@import "./components/index.main";
+@import "./components/indexMain";
 @import "./components/footer";
 @import "./components/modal";
-@import "./components/portfolio";
+@import "./components/portfolioMenu";
+@import "./components/mobileMenu";
 
 body {
 	background-color: $primary-color;
@@ -17,6 +18,23 @@ body {
 }
 
 .container {
-	width: 1200px;
+	width: 100%;
 	@include center;
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 768px;
+		@include center;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		width: 1200px;
+		@include center;
+	}
+}
+a:focus-within {
+	color: $hover-text;
+	fill: $hover-text;
 }
