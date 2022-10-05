@@ -350,9 +350,9 @@
 	  }
 	}
   }
-.block {
+  .block {
 	@include flexCenter(column);
-	padding: 94px 0;
+	padding: 60px 0;
 	gap: 50px;
   
 	&__header {
@@ -371,15 +371,16 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
+	background-size: cover;
   
 	&__container {
 	  @include flexCenter(column);
-	  padding: 200px 0;
+	  padding: 118px 0;
 	  gap: 30px;
 	}
   
 	&__header {
-	  font-size: map-get($font-size, main-text);
+	  font-size: map-get($font-size, logo-font);
 	  color: $primary-color;
 	  letter-spacing: map-get($letter-spacing, header);
 	  font-weight: map-get($font-weight, extrabold);
@@ -397,66 +398,51 @@
 	  border: none;
 	  font-family: $standard-font;
 	  font-size: map-get($font-size, enlarged);
-	  font-weight: map-get($font-weight, bold);
+	  font-weight:  map-get($font-weight, bold);
 	  letter-spacing: map-get($letter-spacing, header);
-	  transition: 0.3s;
-	  &:hover{
-		box-shadow: 1px 1px 5px rgba(116, 114, 114, 0.87);
-	transition: 0.3s;
-	background-color: rgba(73, 71, 71, 0.863);
-	transform: scale(1.05) translateY(0.125rem);
-	  }
 	}
   }
   .our-speciality {
-	@include flexCenter(row);
+	@include flexCenter(column);
 	gap: 30px;
-	padding: 94px 0 0 0;
+	padding: 60px 15px 60px 15px;
 	justify-content: center;
+	width: 100%;
+  
+	& > li {
+	  width: 100%;
+	}
   
 	&__icon {
 	  @include flexCenter(row);
 	  border-radius: 4px;
 	  margin-bottom: 30px;
 	  height: 120px;
-	  width: 270px;
+	  width: 100%;
+  
 	  background-color: $background-card;
 	}
   
 	&__header {
-	  font-weight: map-get($font-weight, bold);
+	  font-weight:  map-get($font-weight, bold);
 	  color: $secondary-text;
-	  font-size: map-get($font-size, standard);
+	  font-size:  map-get($font-size, standard);
 	  margin: 0 0 10px 0;
+	  width: 100%;
+	  text-align: center;
 	}
   
 	&__text {
 	  line-height: 1.71;
 	}
   }
-  .our-services {
-	@include flexCenter(row);
-	gap: 30px;
-  
-	&__description {
-	  color: $primary-color;
-	  font-weight: map-get($font-weight, bold);
-	  background-color: #2f303acc;
-	  height: 70px;
-	  text-align: center;
-	  position: relative;
-	  text-transform: uppercase;
-	  padding: 27px 0;
-	  top: -72px;
-	}
-	&-card-size {
-	  height: 294px;
-	  width: 370px;
-	}
+  .mobile-hidden {
+	display: none;
   }
   .our-team {
-	@include flexCenter(row);
+	@include flexCenter(column);
 	gap: 30px;
+	padding: 0 15px;
   
 	&__card {
 	  @include flexCenter(column);
@@ -502,12 +488,12 @@
   }
   .our-clients {
 	@include flexCenter(row);
+	flex-wrap: wrap;
 	gap: 30px;
-  
 	&__logo {
 	  border-radius: 4px;
 	  border: $icon-background solid 1px;
-	  width: 170px;
+	  width: 210px;
 	  height: 92px;
 	  fill: $icon-background;
 	  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -519,3 +505,4 @@
 	  }
 	}
   }
+  

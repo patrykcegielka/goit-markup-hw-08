@@ -351,17 +351,23 @@
         </section>
     </main>
     <footer>
-        <div class="footer__container">
-            <div>
-                <a href="index.html" class="footer__logo "><span class="footer__logo-color">Web</span>Studio</a>
+        <div class="container footer">
+            <div class="footer__container">
+                <a href="index.html" class="footer__logo"><span class="footer__logo-color">Web</span>Studio</a>
                 <address class="footer__address">
-                    <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-                    <a href="mailto:info@devstudio.com" class="footer__links">info@devstudio.com</a>
-                    <a href="tel:+48111111111" class="footer__links">+48 111 111 111</a>
+                    m. Warszawa, Aleje Jerozolimskie 21
                 </address>
+                <ul class="footer__links">
+                    <li>
+                        <a href="emailto:info@devstudio.com" class="footer__link">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a href="tel:+48111111111" class="footer__link">+48 111 111 111</a>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <h4 class="footer__header">Dołącz do Nas</h4>
+            <div class="footer__container">
+                <h4 class="footer__header">Dołącz do nas</h4>
                 <ul class="footer__icons">
                     <li>
                         <a href="#">
@@ -397,13 +403,13 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="footer__container">
                 <h4 class="footer__header">Zapisz się do newslettera</h4>
-                <input type="email" class="footer__sign-up" placeholder="E-mail">
-                <button type="submit" class="footer__button">Zapisz się
-                    <svg class="footer__button-logo">
-                        <use xlink:href="./images/icons.svg#send" width="24" height="24" x="20" y="0">
-                        </use>
+                <input type="text" class="footer__sign-up" placeholder="E-mail" />
+                <button type="submit" class="footer__button">
+                    Zapisz się
+                    <svg class="footer__button-icon">
+                        <use xlink:href="./images/icons.svg#send" width="24" height="24" x="20" y="0"></use>
                     </svg>
                 </button>
             </div>
@@ -488,7 +494,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
