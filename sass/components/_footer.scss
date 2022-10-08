@@ -134,7 +134,6 @@ footer {
 			font-family: $logo-font;
 			font-size: map-get($font-size, logo-font);
 			font-weight: map-get($font-weight, bold);
-			color: $primary-color;
 			line-height: 1.193;
 
 			&-color {
@@ -168,7 +167,6 @@ footer {
 		&__header {
 			font-weight: map-get($font-weight, bold);
 			font-size: map-get($font-size, standard);
-			color: $primary-color;
 			text-transform: uppercase;
 			margin: 0 0 20px 0px;
 		}
