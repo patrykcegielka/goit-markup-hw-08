@@ -1102,7 +1102,7 @@ footer {
   font-size: 16px;
 }
 .footer__button {
-  margin: 0;
+  margin: 20px;
   background-color: #2196f3;
   color: #ffffff;
   width: 200px;
@@ -1509,8 +1509,9 @@ footer {
   cursor: pointer;
 }
 .modal__terms-and-conditions {
-  font-size: 14px;
+  font-size: 11px;
   padding: 10px 0 20px 0;
+  margin: 0 0 0 15px;
 }
 .modal__terms-and-conditions input {
   position: absolute;
@@ -1527,12 +1528,12 @@ footer {
 }
 .modal__checkmark {
   position: absolute;
-  cursor: pointer;
-  top: 455px;
+  top: 474px;
   left: 45px;
   height: 16px;
   width: 16px;
   border-radius: 2px;
+  cursor: pointer;
   background-color: #ffffff;
   border: #212121 2px solid;
 }
@@ -1547,7 +1548,7 @@ footer {
   height: 8px;
   position: absolute;
   left: 48px;
-  top: 459px;
+  top: 478px;
   z-index: 999;
 }
 .modal__links {
@@ -1679,6 +1680,7 @@ footer {
   .modal__terms-and-conditions {
     font-size: 12px;
     padding: 10px 0 20px 0;
+    margin: 0 0 0 12px;
   }
   .modal__terms-and-conditions input {
     position: absolute;
@@ -1695,12 +1697,13 @@ footer {
   }
   .modal__checkmark {
     position: absolute;
-    cursor: pointer;
+    margin: 22px -5px;
     top: 455px;
     left: 45px;
     height: 16px;
     width: 16px;
     border-radius: 2px;
+    cursor: pointer;
     background-color: #ffffff;
     border: #212121 2px solid;
   }
@@ -1714,8 +1717,8 @@ footer {
     width: 11px;
     height: 8px;
     position: absolute;
-    left: 48px;
-    top: 459px;
+    left: 43px;
+    top: 481px;
     z-index: 999;
   }
   .modal__links {
@@ -1862,14 +1865,14 @@ footer {
   }
   .modal__checkmark {
     position: absolute;
-    cursor: pointer;
-    top: 455px;
-    left: 45px;
+    top: 432px;
+    left: 50px;
     height: 16px;
     width: 16px;
     border-radius: 2px;
     background-color: #ffffff;
     border: #212121 2px solid;
+    cursor: pointer;
   }
   .modal__checkmark:after {
     content: "";

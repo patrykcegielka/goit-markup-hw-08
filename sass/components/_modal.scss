@@ -95,8 +95,9 @@
 		cursor: pointer;
 	}
 	&__terms-and-conditions {
-		font-size: 14px;
+		font-size: 11px;
 		padding: 10px 0 20px 0;
+		margin: 0 0 0 15px; 
 
 		& input {
 			position: absolute;
@@ -114,12 +115,12 @@
 	}
 	&__checkmark {
 		position: absolute;
-		cursor: pointer;
-		top: 455px;
+		top: 474px;
 		left: 45px;
 		height: 16px;
 		width: 16px;
 		border-radius: 2px;
+		cursor: pointer;
 		background-color: $primary-color;
 		border: $secondary-text 2px solid;
 		&:after {
@@ -134,7 +135,7 @@
 		height: 8px;
 		position: absolute;
 		left: 48px;
-		top: 459px;
+		top: 478px;
 		z-index: 999;
 	}
 	&__links {
@@ -248,6 +249,7 @@
 		&__terms-and-conditions {
 			font-size: 12px;
 			padding: 10px 0 20px 0;
+			margin: 0 0 0 12px;
 
 			& input {
 				position: absolute;
@@ -265,12 +267,13 @@
 		}
 		&__checkmark {
 			position: absolute;
-			cursor: pointer;
+			margin: 22px -5px;
 			top: 455px;
 			left: 45px;
 			height: 16px;
 			width: 16px;
 			border-radius: 2px;
+			cursor: pointer;
 			background-color: $primary-color;
 			border: $secondary-text 2px solid;
 			&:after {
@@ -284,8 +287,8 @@
 			width: 11px;
 			height: 8px;
 			position: absolute;
-			left: 48px;
-			top: 459px;
+			left: 43px;
+			top: 481px;
 			z-index: 999;
 		}
 		&__links {
@@ -416,14 +419,14 @@
 		}
 		&__checkmark {
 			position: absolute;
-			cursor: pointer;
-			top: 455px;
-			left: 45px;
+			top: 432px;
+			left: 50px;
 			height: 16px;
 			width: 16px;
 			border-radius: 2px;
 			background-color: $primary-color;
 			border: $secondary-text 2px solid;
+			cursor: pointer;
 			&:after {
 				content: "";
 				position: absolute;
